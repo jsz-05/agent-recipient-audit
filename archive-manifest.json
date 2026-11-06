@@ -1,0 +1,170 @@
+[
+  {
+    "path": "data/results/email/claude-fable-5_all_2026-06-09_22-15-23.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/claude-fable-5_all_2026-06-09_22-15-23.csv.gz",
+    "size": 59139,
+    "git_blob": "b1247e15a2223f37772410094b3ffe84b989362b",
+    "sha256": "28a1312c5946de4cb0ee0583ecb66a24baaaf6bf076f74d9b2257db7372b3e96"
+  },
+  {
+    "path": "data/results/email/claude-haiku-4.5_all_2026-06-03_18-00-07.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/claude-haiku-4.5_all_2026-06-03_18-00-07.csv.gz",
+    "size": 67735,
+    "git_blob": "a5191218bb3fcdc2be8c9df1e46746e1c4170e8b",
+    "sha256": "f851c0475e70ecd951bd84df3a2f27e40dffbd601d5a780178c1956338a6f173"
+  },
+  {
+    "path": "data/results/email/claude-opus-4.8_all_2026-06-03_14-11-30.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/claude-opus-4.8_all_2026-06-03_14-11-30.csv.gz",
+    "size": 61363,
+    "git_blob": "b1b378a04e3dfe31f4226767c437103c0f9c4826",
+    "sha256": "e9bd89d593b98a2cf7479eda0319ec85a72afd30568e220c01611b422e6bdabb"
+  },
+  {
+    "path": "data/results/email/claude-sonnet-4.6_all_2026-06-03_13-27-33.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/claude-sonnet-4.6_all_2026-06-03_13-27-33.csv.gz",
+    "size": 62114,
+    "git_blob": "0aab6516afbfee75e0a3abd34c802846073957b4",
+    "sha256": "48a2c7480adaa3657df9128ec667e65fd12f850e30eec8dd2be3264ec7eea00c"
+  },
+  {
+    "path": "data/results/email/deepseek-v4-pro_all_2026-06-03_18-08-20.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/deepseek-v4-pro_all_2026-06-03_18-08-20.csv.gz",
+    "size": 69574,
+    "git_blob": "a4c1780d0c14075c790811d64039a118c1640d46",
+    "sha256": "cbaf774b04e7ec17426ed6a402a5b814ba35b8a49c6c6dfa1391abfef1e7257a"
+  },
+  {
+    "path": "data/results/email/gemini-3.1-pro_all_2026-06-03_20-51-56.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gemini-3.1-pro_all_2026-06-03_20-51-56.csv.gz",
+    "size": 57729,
+    "git_blob": "7629b241fda3945f6d3a30e5f182bcbbd1357687",
+    "sha256": "e64d6c8ea74fa99ff371c8d733df114dea60494c088e61d9febc9a2ce6e88be6"
+  },
+  {
+    "path": "data/results/email/gemini-3.5-flash_all_2026-06-03_19-46-17.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gemini-3.5-flash_all_2026-06-03_19-46-17.csv.gz",
+    "size": 62853,
+    "git_blob": "d923e8b74e931a618ccdd20904ef9fb43cecfca9",
+    "sha256": "3b8a9788cafd8814e5888854c43d8955f9c648f6b18d556adcc2b759343e82c3"
+  },
+  {
+    "path": "data/results/email/glm-4.6_all_2026-06-03_21-32-58.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/glm-4.6_all_2026-06-03_21-32-58.csv.gz",
+    "size": 56783,
+    "git_blob": "537b93247a2227f7c181ad93bc5ee7b7a974b0a5",
+    "sha256": "6aeb7e7f2d488481fa9a01fa79fc74536c70b070dbf2e4a8642840d50b935c92"
+  },
+  {
+    "path": "data/results/email/gpt-3.5_all_2026-06-04_09-53-16.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gpt-3.5_all_2026-06-04_09-53-16.csv.gz",
+    "size": 34150,
+    "git_blob": "00196a9927e2a4b2d88744820fa037cde175a45c",
+    "sha256": "9c930cd457e4a85e9b76a09328a2dbf599056b5e0783f799d10466c6ff63acd2"
+  },
+  {
+    "path": "data/results/email/gpt-4-turbo_all_2026-06-03_18-36-30.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gpt-4-turbo_all_2026-06-03_18-36-30.csv.gz",
+    "size": 54383,
+    "git_blob": "f88f625453f209f6cf2227001d559a42eed60f77",
+    "sha256": "dc4e458dc99dfde5594cf6a8cc26540085444e77fd7f29c328cb4839d9a97251"
+  },
+  {
+    "path": "data/results/email/gpt-4.1_all_2026-06-04_10-10-16.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gpt-4.1_all_2026-06-04_10-10-16.csv.gz",
+    "size": 54707,
+    "git_blob": "b28729f2e971c71dc4b720c7694e84316d7abd60",
+    "sha256": "0820d1395646bd2d384b3e7fcbd28d983976fb852c96c8f3f14432b4b35bb004"
+  },
+  {
+    "path": "data/results/email/gpt-4o_all_2026-06-04_09-56-59.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gpt-4o_all_2026-06-04_09-56-59.csv.gz",
+    "size": 55336,
+    "git_blob": "0ac0c420ef4941cdd11ee4d2ff9c7ff842a6509e",
+    "sha256": "3e63d1b902aec16bb216d80ee9e34c095d5e3907cf09de06b1cc792988f0b8a9"
+  },
+  {
+    "path": "data/results/email/gpt-5.1_all_2026-06-04_10-42-28.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gpt-5.1_all_2026-06-04_10-42-28.csv.gz",
+    "size": 55278,
+    "git_blob": "cfd0ee75b91adb9511b60ea29dbec94a1db6534d",
+    "sha256": "ce87c0313800f9c6837dc479d4915687ead3406df62c9738924075431720a808"
+  },
+  {
+    "path": "data/results/email/gpt-5.2_all_2026-06-04_10-46-45.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gpt-5.2_all_2026-06-04_10-46-45.csv.gz",
+    "size": 56649,
+    "git_blob": "6977babec9a9a146eaea1bfa2f842a1a2e78bb95",
+    "sha256": "adc1c5c5ad3c8849754bba8869ee50f9323658546d7d568d0a86330c35e6e09d"
+  },
+  {
+    "path": "data/results/email/gpt-5.4-mini_all_2026-06-03_17-59-59.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gpt-5.4-mini_all_2026-06-03_17-59-59.csv.gz",
+    "size": 56059,
+    "git_blob": "02b1f63b0bc440ad633e26c30bd826af5063e73d",
+    "sha256": "0133cd7d88e089dd7ce88e70e824554956d4427b35b5f3b645a4a61922521269"
+  },
+  {
+    "path": "data/results/email/gpt-5.4-nano_all_2026-06-03_18-04-06.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gpt-5.4-nano_all_2026-06-03_18-04-06.csv.gz",
+    "size": 52714,
+    "git_blob": "79234719ec37e4a403d922ff88409a4e18e7a2fd",
+    "sha256": "5a23c421a1f50e1d1cfa3faf0dbb00c998f1a7ecfc2cd8272988722b3c074bcf"
+  },
+  {
+    "path": "data/results/email/gpt-5.4_all_2026-06-04_10-52-47.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gpt-5.4_all_2026-06-04_10-52-47.csv.gz",
+    "size": 53968,
+    "git_blob": "b8fe8f916076b72685be5aa86a53be63db65482c",
+    "sha256": "f2ff78645e14af96185521244937213567ccc1b476bec2510132c594e9ed5803"
+  },
+  {
+    "path": "data/results/email/gpt-5.5_all_2026-06-03_16-32-20.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gpt-5.5_all_2026-06-03_16-32-20.csv.gz",
+    "size": 52288,
+    "git_blob": "5fea11c65d0756a0388ff935a4ff73a8945394dd",
+    "sha256": "cc4147ec6d2d957a4d93aa22fd64013b12c985fc17c095040df75565af01d388"
+  },
+  {
+    "path": "data/results/email/gpt-5_all_2026-06-04_10-14-51.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/gpt-5_all_2026-06-04_10-14-51.csv.gz",
+    "size": 57049,
+    "git_blob": "d05f7dc8b74a614c9fbece60d3e4cf0fe46dc522",
+    "sha256": "d44f5c998b1d9bd5520c0db20ad7b8d2a7cb82c42e96af38e61c40b9620f4270"
+  },
+  {
+    "path": "data/results/email/kimi-k2.6_all_2026-06-03_21-14-29.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/kimi-k2.6_all_2026-06-03_21-14-29.csv.gz",
+    "size": 46379,
+    "git_blob": "7654fdb1570b99d5ec81d05695c4b770b77eeae7",
+    "sha256": "a563bb68b93c14b7e3074e7d6e0a30d300980db2bbdbd39c6b710299475e44ee"
+  },
+  {
+    "path": "data/results/email/mistral-medium-3-5_all_2026-06-12_13-04-12.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/mistral-medium-3-5_all_2026-06-12_13-04-12.csv.gz",
+    "size": 65046,
+    "git_blob": "24583e362015bdd9dd4a00df2035e51d8d1e2ec6",
+    "sha256": "67af419c47ed859eb413617b47e6ce8c647699b268996ae9277ec684ad08862e"
+  },
+  {
+    "path": "data/results/email/mistral-small-2603_all_2026-06-12_12-59-38.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/mistral-small-2603_all_2026-06-12_12-59-38.csv.gz",
+    "size": 51770,
+    "git_blob": "40d5bdfa912c9bf424310108f6bc74b83485d12a",
+    "sha256": "4d60c165dc32a979f4a38137befc975b1b37ea97b157c0518700464acd126bdd"
+  },
+  {
+    "path": "data/results/email/o3_all_2026-06-04_10-00-17.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/o3_all_2026-06-04_10-00-17.csv.gz",
+    "size": 55343,
+    "git_blob": "f0efad7ac02885cecf517ff735ef5d11343c4095",
+    "sha256": "dc121814342b00967f55e456cf30b518b30ca813d2d21b1c20802cf721b9ca9e"
+  },
+  {
+    "path": "data/results/email/qwen-3.5-flash_all_2026-06-03_17-45-13.csv.gz",
+    "url": "https://raw.githubusercontent.com/olly-styles/WorkBench/49c7dfd00c03d384ec59ea57374f50b766aa5613/data/results/email/qwen-3.5-flash_all_2026-06-03_17-45-13.csv.gz",
+    "size": 68086,
+    "git_blob": "63d25a794032eec026da6e1c1131658b06af808a",
+    "sha256": "d6678cce8fc334f02d38380a1e5b7e3bf97cd0cbd3c0c2ab2e4a3d09079517ed"
+  }
+]
