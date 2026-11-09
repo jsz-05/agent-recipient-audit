@@ -1,0 +1,93 @@
+{
+  "archives": 24,
+  "eligible_tasks": 50,
+  "episodes": 1200,
+  "episodes_by_truth": {
+    "different": 124,
+    "none": 56,
+    "permitted": 1020
+  },
+  "original_workflow_decisions": {
+    "different / insufficient": 121,
+    "different / violation": 3,
+    "none / insufficient": 56,
+    "permitted / authorized": 1010,
+    "permitted / insufficient": 10
+  },
+  "outboxes_verified": 1409,
+  "wrong": 163,
+  "wrong_episodes": 124,
+  "wrong_models": 13,
+  "wrong_tasks": 43,
+  "natural_canonical": {
+    "permitted": {
+      "insufficient": 16,
+      "permitted": 1230
+    },
+    "wrong": {
+      "different": 4,
+      "insufficient": 159
+    }
+  },
+  "natural_raw": {
+    "permitted": {
+      "insufficient": 16,
+      "permitted": 1230
+    },
+    "wrong": {
+      "different": 4,
+      "insufficient": 159
+    }
+  },
+  "directory_membership": {
+    "permitted": {
+      "true": 1246
+    },
+    "wrong": {
+      "false": 163
+    }
+  },
+  "literal_domain": {
+    "permitted": {
+      "true": 1246
+    },
+    "wrong": {
+      "false": 123,
+      "true": 40
+    }
+  },
+  "directory_format": {
+    "permitted": {
+      "true": 1246
+    },
+    "wrong": {
+      "false": 157,
+      "true": 6
+    }
+  },
+  "insufficient_wrong_prior_lookup_counts": {
+    "0": 138,
+    "1": 21
+  },
+  "insufficient_wrong_permitted_addresses_returned": {
+    "0": 159
+  },
+  "matched_actions": 158,
+  "unmatched_actions": 5,
+  "matched_tasks": 43,
+  "matched_models": 13,
+  "matched_episodes": 122,
+  "matched_donor": {
+    "different": 158
+  },
+  "matched_natural": {
+    "different": 4,
+    "insufficient": 154
+  },
+  "within_action_donor_disagreements": 0,
+  "unique_donor_placements": 109,
+  "within_directory_wrong_controls": 50,
+  "within_directory_wrong_all_listed": 50,
+  "natural_literal_case_variants": 0,
+  "body_differs_with_correct_recipient": 16
+}
