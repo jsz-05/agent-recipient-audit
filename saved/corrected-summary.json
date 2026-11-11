@@ -1,0 +1,148 @@
+{
+  "all": {
+    "actions": 163,
+    "episodes": 124,
+    "tasks": 43,
+    "models": 13,
+    "equality": {
+      "raw": {
+        "every": 0,
+        "any": 0
+      },
+      "mask": {
+        "every": 161,
+        "any": 161
+      },
+      "tokens": {
+        "every": 94,
+        "any": 101
+      },
+      "canonical": {
+        "every": 94,
+        "any": 101
+      }
+    }
+  },
+  "validated": {
+    "actions": 163,
+    "episodes": 124,
+    "tasks": 43,
+    "models": 13,
+    "equality": {
+      "raw": {
+        "every": 0,
+        "any": 0
+      },
+      "mask": {
+        "every": 161,
+        "any": 161
+      },
+      "tokens": {
+        "every": 94,
+        "any": 101
+      },
+      "canonical": {
+        "every": 94,
+        "any": 101
+      }
+    }
+  },
+  "one_name": {
+    "actions": 103,
+    "episodes": 92,
+    "tasks": 33,
+    "models": 11,
+    "equality": {
+      "raw": {
+        "every": 0,
+        "any": 0
+      },
+      "mask": {
+        "every": 103,
+        "any": 103
+      },
+      "tokens": {
+        "every": 56,
+        "any": 56
+      },
+      "canonical": {
+        "every": 56,
+        "any": 56
+      }
+    }
+  },
+  "one_outbound": {
+    "actions": 83,
+    "episodes": 83,
+    "tasks": 34,
+    "models": 11,
+    "equality": {
+      "raw": {
+        "every": 0,
+        "any": 0
+      },
+      "mask": {
+        "every": 81,
+        "any": 81
+      },
+      "tokens": {
+        "every": 56,
+        "any": 56
+      },
+      "canonical": {
+        "every": 56,
+        "any": 56
+      }
+    }
+  },
+  "only_wrong_outbound": {
+    "actions": 85,
+    "episodes": 85,
+    "tasks": 35,
+    "models": 12,
+    "equality": {
+      "raw": {
+        "every": 0,
+        "any": 0
+      },
+      "mask": {
+        "every": 83,
+        "any": 83
+      },
+      "tokens": {
+        "every": 56,
+        "any": 57
+      },
+      "canonical": {
+        "every": 56,
+        "any": 57
+      }
+    }
+  },
+  "last_tool": {
+    "actions": 124,
+    "episodes": 124,
+    "tasks": 43,
+    "models": 13,
+    "equality": {
+      "raw": {
+        "every": 0,
+        "any": 0
+      },
+      "mask": {
+        "every": 122,
+        "any": 122
+      },
+      "tokens": {
+        "every": 75,
+        "any": 79
+      },
+      "canonical": {
+        "every": 75,
+        "any": 79
+      }
+    }
+  },
+  "corrected_downstream_changes": 0,
+  "unvalidated_original_reasons": {}
+}
