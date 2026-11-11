@@ -1,0 +1,22 @@
+{
+  "grafana_mask": {
+    "every": 161,
+    "any": 161
+  },
+  "grafana_canonical": {
+    "every": 94,
+    "any": 101
+  },
+  "langsmith_hmac_bytes": {
+    "every": 0,
+    "any": 0
+  },
+  "langsmith_hmac_equality": {
+    "every": 94,
+    "any": 101
+  },
+  "langsmith_membership": {
+    "every": 0,
+    "any": 0
+  }
+}
