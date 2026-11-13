@@ -1,0 +1,892 @@
+{
+  "protocol": "See protocol.md. Primary average gives equal weight to each observed error.",
+  "primary": {
+    "eligible_placements": 2902,
+    "validated_placements": 2902,
+    "invalid_reasons": {},
+    "errors": 160,
+    "tasks": 43,
+    "wrong_source_models": 13,
+    "donor_models": 23,
+    "donor_episodes": 813,
+    "distinct_modified_donor_calls": 1482,
+    "comparisons_per_error_range": [
+      4,
+      22
+    ],
+    "inserted_verdicts": {
+      "different": 2882,
+      "insufficient": 20
+    },
+    "natural_verdicts_on_same_errors": {
+      "different": 4,
+      "insufficient": 156
+    },
+    "errors_detected_in_all_comparisons": 143,
+    "errors_detected_in_some_comparisons": 17,
+    "errors_detected_in_no_comparison": 0,
+    "equal_error_mean_detection": 0.9933636173767753,
+    "natural_detection_on_same_errors": 0.025,
+    "equal_task_inserted": 0.9930543412795555,
+    "equal_task_natural": 0.013049095607235143,
+    "raw_canonical_disagreements": 0
+  },
+  "same_errors_as_previous": {
+    "eligible_placements": 2894,
+    "validated_placements": 2894,
+    "invalid_reasons": {},
+    "errors": 158,
+    "tasks": 43,
+    "wrong_source_models": 13,
+    "donor_models": 23,
+    "donor_episodes": 813,
+    "distinct_modified_donor_calls": 1474,
+    "comparisons_per_error_range": [
+      15,
+      22
+    ],
+    "inserted_verdicts": {
+      "different": 2874,
+      "insufficient": 20
+    },
+    "natural_verdicts_on_same_errors": {
+      "different": 4,
+      "insufficient": 154
+    },
+    "errors_detected_in_all_comparisons": 141,
+    "errors_detected_in_some_comparisons": 17,
+    "errors_detected_in_no_comparison": 0,
+    "equal_error_mean_detection": 0.9932796125334433,
+    "natural_detection_on_same_errors": 0.02531645569620253,
+    "equal_task_inserted": 0.9930543412795555,
+    "equal_task_natural": 0.013049095607235143,
+    "raw_canonical_disagreements": 0
+  },
+  "recomputed_previous_reference": {
+    "eligible_placements": 158,
+    "validated_placements": 158,
+    "invalid_reasons": {},
+    "errors": 158,
+    "tasks": 43,
+    "wrong_source_models": 13,
+    "donor_models": 1,
+    "donor_episodes": 43,
+    "distinct_modified_donor_calls": 80,
+    "comparisons_per_error_range": [
+      1,
+      1
+    ],
+    "inserted_verdicts": {
+      "different": 158
+    },
+    "natural_verdicts_on_same_errors": {
+      "different": 4,
+      "insufficient": 154
+    },
+    "errors_detected_in_all_comparisons": 158,
+    "errors_detected_in_some_comparisons": 0,
+    "errors_detected_in_no_comparison": 0,
+    "equal_error_mean_detection": 1,
+    "natural_detection_on_same_errors": 0.02531645569620253,
+    "equal_task_inserted": 1,
+    "equal_task_natural": 0.013049095607235143,
+    "raw_canonical_disagreements": 0
+  },
+  "only_workbench_final_state_correct": {
+    "eligible_placements": 2865,
+    "validated_placements": 2865,
+    "invalid_reasons": {},
+    "errors": 158,
+    "tasks": 43,
+    "wrong_source_models": 13,
+    "donor_models": 23,
+    "donor_episodes": 801,
+    "distinct_modified_donor_calls": 1456,
+    "comparisons_per_error_range": [
+      14,
+      22
+    ],
+    "inserted_verdicts": {
+      "different": 2845,
+      "insufficient": 20
+    },
+    "natural_verdicts_on_same_errors": {
+      "different": 4,
+      "insufficient": 154
+    },
+    "errors_detected_in_all_comparisons": 141,
+    "errors_detected_in_some_comparisons": 17,
+    "errors_detected_in_no_comparison": 0,
+    "equal_error_mean_detection": 0.9932796125334433,
+    "natural_detection_on_same_errors": 0.02531645569620253,
+    "equal_task_inserted": 0.9930543412795555,
+    "equal_task_natural": 0.013049095607235143,
+    "raw_canonical_disagreements": 0
+  },
+  "all_eligible_call_positions": {
+    "eligible_placements": 4002,
+    "validated_placements": 4002,
+    "invalid_reasons": {},
+    "errors": 160,
+    "tasks": 43,
+    "wrong_source_models": 13,
+    "donor_models": 23,
+    "donor_episodes": 813,
+    "distinct_modified_donor_calls": 2015,
+    "comparisons_per_error_range": [
+      4,
+      42
+    ],
+    "inserted_verdicts": {
+      "different": 3972,
+      "insufficient": 30
+    },
+    "natural_verdicts_on_same_errors": {
+      "different": 4,
+      "insufficient": 156
+    },
+    "errors_detected_in_all_comparisons": 143,
+    "errors_detected_in_some_comparisons": 17,
+    "errors_detected_in_no_comparison": 0,
+    "equal_error_mean_detection": 0.9950997284878864,
+    "natural_detection_on_same_errors": 0.025,
+    "equal_task_inserted": 0.9937003361115968,
+    "equal_task_natural": 0.013049095607235143,
+    "raw_canonical_disagreements": 0
+  },
+  "original_errors": 163,
+  "old_errors_without_new_match": 0,
+  "newly_covered_errors": 2,
+  "unmatched_errors": [
+    [
+      "gpt-3.5",
+      48,
+      3
+    ],
+    [
+      "gpt-3.5",
+      66,
+      2
+    ],
+    [
+      "gpt-3.5",
+      68,
+      2
+    ]
+  ],
+  "donor_original_unmodified_verdicts": {
+    "insufficient": 5,
+    "permitted": 827
+  },
+  "alternate_donor_breakdown": {
+    "claude-fable-5": {
+      "eligible_placements": 158,
+      "validated_placements": 158,
+      "invalid_reasons": {},
+      "errors": 158,
+      "tasks": 43,
+      "wrong_source_models": 13,
+      "donor_models": 1,
+      "donor_episodes": 43,
+      "distinct_modified_donor_calls": 80,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 158
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 154
+      },
+      "errors_detected_in_all_comparisons": 158,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.02531645569620253,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.013049095607235143,
+      "raw_canonical_disagreements": 0
+    },
+    "claude-haiku-4.5": {
+      "eligible_placements": 129,
+      "validated_placements": 129,
+      "invalid_reasons": {},
+      "errors": 129,
+      "tasks": 35,
+      "wrong_source_models": 12,
+      "donor_models": 1,
+      "donor_episodes": 35,
+      "distinct_modified_donor_calls": 64,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 129
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 3,
+        "insufficient": 126
+      },
+      "errors_detected_in_all_comparisons": 129,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.023255813953488372,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.008888888888888889,
+      "raw_canonical_disagreements": 0
+    },
+    "claude-opus-4.8": {
+      "eligible_placements": 158,
+      "validated_placements": 158,
+      "invalid_reasons": {},
+      "errors": 158,
+      "tasks": 43,
+      "wrong_source_models": 13,
+      "donor_models": 1,
+      "donor_episodes": 43,
+      "distinct_modified_donor_calls": 80,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 158
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 154
+      },
+      "errors_detected_in_all_comparisons": 158,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.02531645569620253,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.013049095607235143,
+      "raw_canonical_disagreements": 0
+    },
+    "claude-sonnet-4.6": {
+      "eligible_placements": 158,
+      "validated_placements": 158,
+      "invalid_reasons": {},
+      "errors": 158,
+      "tasks": 43,
+      "wrong_source_models": 13,
+      "donor_models": 1,
+      "donor_episodes": 43,
+      "distinct_modified_donor_calls": 80,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 158
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 154
+      },
+      "errors_detected_in_all_comparisons": 158,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.02531645569620253,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.013049095607235143,
+      "raw_canonical_disagreements": 0
+    },
+    "deepseek-v4-pro": {
+      "eligible_placements": 158,
+      "validated_placements": 158,
+      "invalid_reasons": {},
+      "errors": 158,
+      "tasks": 43,
+      "wrong_source_models": 13,
+      "donor_models": 1,
+      "donor_episodes": 43,
+      "distinct_modified_donor_calls": 80,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 158
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 154
+      },
+      "errors_detected_in_all_comparisons": 158,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.02531645569620253,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.013049095607235143,
+      "raw_canonical_disagreements": 0
+    },
+    "gemini-3.1-pro": {
+      "eligible_placements": 158,
+      "validated_placements": 158,
+      "invalid_reasons": {},
+      "errors": 158,
+      "tasks": 43,
+      "wrong_source_models": 13,
+      "donor_models": 1,
+      "donor_episodes": 43,
+      "distinct_modified_donor_calls": 80,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 158
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 154
+      },
+      "errors_detected_in_all_comparisons": 158,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.02531645569620253,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.013049095607235143,
+      "raw_canonical_disagreements": 0
+    },
+    "gemini-3.5-flash": {
+      "eligible_placements": 158,
+      "validated_placements": 158,
+      "invalid_reasons": {},
+      "errors": 158,
+      "tasks": 43,
+      "wrong_source_models": 13,
+      "donor_models": 1,
+      "donor_episodes": 43,
+      "distinct_modified_donor_calls": 80,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 158
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 154
+      },
+      "errors_detected_in_all_comparisons": 158,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.02531645569620253,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.013049095607235143,
+      "raw_canonical_disagreements": 0
+    },
+    "glm-4.6": {
+      "eligible_placements": 158,
+      "validated_placements": 158,
+      "invalid_reasons": {},
+      "errors": 158,
+      "tasks": 43,
+      "wrong_source_models": 13,
+      "donor_models": 1,
+      "donor_episodes": 43,
+      "distinct_modified_donor_calls": 80,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 158
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 154
+      },
+      "errors_detected_in_all_comparisons": 158,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.02531645569620253,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.013049095607235143,
+      "raw_canonical_disagreements": 0
+    },
+    "gpt-3.5": {
+      "eligible_placements": 17,
+      "validated_placements": 17,
+      "invalid_reasons": {},
+      "errors": 17,
+      "tasks": 9,
+      "wrong_source_models": 7,
+      "donor_models": 1,
+      "donor_episodes": 9,
+      "distinct_modified_donor_calls": 9,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 17
+      },
+      "natural_verdicts_on_same_errors": {
+        "insufficient": 17
+      },
+      "errors_detected_in_all_comparisons": 17,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0,
+      "raw_canonical_disagreements": 0
+    },
+    "gpt-4-turbo": {
+      "eligible_placements": 111,
+      "validated_placements": 111,
+      "invalid_reasons": {},
+      "errors": 111,
+      "tasks": 36,
+      "wrong_source_models": 11,
+      "donor_models": 1,
+      "donor_episodes": 36,
+      "distinct_modified_donor_calls": 61,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 111
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 1,
+        "insufficient": 110
+      },
+      "errors_detected_in_all_comparisons": 111,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.009009009009009009,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.006944444444444444,
+      "raw_canonical_disagreements": 0
+    },
+    "gpt-4o": {
+      "eligible_placements": 132,
+      "validated_placements": 132,
+      "invalid_reasons": {},
+      "errors": 132,
+      "tasks": 38,
+      "wrong_source_models": 12,
+      "donor_models": 1,
+      "donor_episodes": 38,
+      "distinct_modified_donor_calls": 69,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 132
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 3,
+        "insufficient": 129
+      },
+      "errors_detected_in_all_comparisons": 132,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.022727272727272728,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.011842105263157895,
+      "raw_canonical_disagreements": 0
+    },
+    "gpt-5": {
+      "eligible_placements": 158,
+      "validated_placements": 158,
+      "invalid_reasons": {},
+      "errors": 158,
+      "tasks": 43,
+      "wrong_source_models": 13,
+      "donor_models": 1,
+      "donor_episodes": 43,
+      "distinct_modified_donor_calls": 80,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 148,
+        "insufficient": 10
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 154
+      },
+      "errors_detected_in_all_comparisons": 148,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 10,
+      "equal_error_mean_detection": 0.9367088607594937,
+      "natural_detection_on_same_errors": 0.02531645569620253,
+      "equal_task_inserted": 0.9767441860465116,
+      "equal_task_natural": 0.013049095607235143,
+      "raw_canonical_disagreements": 0
+    },
+    "gpt-5.1": {
+      "eligible_placements": 99,
+      "validated_placements": 99,
+      "invalid_reasons": {},
+      "errors": 99,
+      "tasks": 26,
+      "wrong_source_models": 11,
+      "donor_models": 1,
+      "donor_episodes": 26,
+      "distinct_modified_donor_calls": 51,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 99
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 2,
+        "insufficient": 97
+      },
+      "errors_detected_in_all_comparisons": 99,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.020202020202020204,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.013888888888888888,
+      "raw_canonical_disagreements": 0
+    },
+    "gpt-5.2": {
+      "eligible_placements": 134,
+      "validated_placements": 134,
+      "invalid_reasons": {},
+      "errors": 134,
+      "tasks": 38,
+      "wrong_source_models": 11,
+      "donor_models": 1,
+      "donor_episodes": 38,
+      "distinct_modified_donor_calls": 69,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 134
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 2,
+        "insufficient": 132
+      },
+      "errors_detected_in_all_comparisons": 134,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.014925373134328358,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.009502923976608187,
+      "raw_canonical_disagreements": 0
+    },
+    "gpt-5.4": {
+      "eligible_placements": 158,
+      "validated_placements": 158,
+      "invalid_reasons": {},
+      "errors": 158,
+      "tasks": 43,
+      "wrong_source_models": 13,
+      "donor_models": 1,
+      "donor_episodes": 43,
+      "distinct_modified_donor_calls": 80,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 158
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 154
+      },
+      "errors_detected_in_all_comparisons": 158,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.02531645569620253,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.013049095607235143,
+      "raw_canonical_disagreements": 0
+    },
+    "gpt-5.4-mini": {
+      "eligible_placements": 87,
+      "validated_placements": 87,
+      "invalid_reasons": {},
+      "errors": 87,
+      "tasks": 29,
+      "wrong_source_models": 11,
+      "donor_models": 1,
+      "donor_episodes": 29,
+      "distinct_modified_donor_calls": 44,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 87
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 3,
+        "insufficient": 84
+      },
+      "errors_detected_in_all_comparisons": 87,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.034482758620689655,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.015517241379310345,
+      "raw_canonical_disagreements": 0
+    },
+    "gpt-5.4-nano": {
+      "eligible_placements": 29,
+      "validated_placements": 29,
+      "invalid_reasons": {},
+      "errors": 29,
+      "tasks": 13,
+      "wrong_source_models": 10,
+      "donor_models": 1,
+      "donor_episodes": 13,
+      "distinct_modified_donor_calls": 16,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 28,
+        "insufficient": 1
+      },
+      "natural_verdicts_on_same_errors": {
+        "insufficient": 29
+      },
+      "errors_detected_in_all_comparisons": 28,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 1,
+      "equal_error_mean_detection": 0.9655172413793104,
+      "natural_detection_on_same_errors": 0,
+      "equal_task_inserted": 0.9230769230769231,
+      "equal_task_natural": 0,
+      "raw_canonical_disagreements": 0
+    },
+    "gpt-5.5": {
+      "eligible_placements": 155,
+      "validated_placements": 155,
+      "invalid_reasons": {},
+      "errors": 155,
+      "tasks": 42,
+      "wrong_source_models": 12,
+      "donor_models": 1,
+      "donor_episodes": 42,
+      "distinct_modified_donor_calls": 79,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 155
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 151
+      },
+      "errors_detected_in_all_comparisons": 155,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.025806451612903226,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.01335978835978836,
+      "raw_canonical_disagreements": 0
+    },
+    "kimi-k2.6": {
+      "eligible_placements": 158,
+      "validated_placements": 158,
+      "invalid_reasons": {},
+      "errors": 158,
+      "tasks": 43,
+      "wrong_source_models": 13,
+      "donor_models": 1,
+      "donor_episodes": 43,
+      "distinct_modified_donor_calls": 80,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 158
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 154
+      },
+      "errors_detected_in_all_comparisons": 158,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.02531645569620253,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.013049095607235143,
+      "raw_canonical_disagreements": 0
+    },
+    "mistral-medium-3-5": {
+      "eligible_placements": 142,
+      "validated_placements": 142,
+      "invalid_reasons": {},
+      "errors": 142,
+      "tasks": 40,
+      "wrong_source_models": 12,
+      "donor_models": 1,
+      "donor_episodes": 40,
+      "distinct_modified_donor_calls": 74,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 135,
+        "insufficient": 7
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 138
+      },
+      "errors_detected_in_all_comparisons": 135,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 7,
+      "equal_error_mean_detection": 0.9507042253521126,
+      "natural_detection_on_same_errors": 0.028169014084507043,
+      "equal_task_inserted": 0.95,
+      "equal_task_natural": 0.014027777777777778,
+      "raw_canonical_disagreements": 0
+    },
+    "mistral-small-2603": {
+      "eligible_placements": 34,
+      "validated_placements": 34,
+      "invalid_reasons": {},
+      "errors": 34,
+      "tasks": 9,
+      "wrong_source_models": 9,
+      "donor_models": 1,
+      "donor_episodes": 9,
+      "distinct_modified_donor_calls": 16,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 33,
+        "insufficient": 1
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 2,
+        "insufficient": 32
+      },
+      "errors_detected_in_all_comparisons": 33,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 1,
+      "equal_error_mean_detection": 0.9705882352941176,
+      "natural_detection_on_same_errors": 0.058823529411764705,
+      "equal_task_inserted": 0.8888888888888888,
+      "equal_task_natural": 0.022222222222222223,
+      "raw_canonical_disagreements": 0
+    },
+    "o3": {
+      "eligible_placements": 136,
+      "validated_placements": 136,
+      "invalid_reasons": {},
+      "errors": 136,
+      "tasks": 37,
+      "wrong_source_models": 12,
+      "donor_models": 1,
+      "donor_episodes": 37,
+      "distinct_modified_donor_calls": 70,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 135,
+        "insufficient": 1
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 4,
+        "insufficient": 132
+      },
+      "errors_detected_in_all_comparisons": 135,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 1,
+      "equal_error_mean_detection": 0.9926470588235294,
+      "natural_detection_on_same_errors": 0.029411764705882353,
+      "equal_task_inserted": 0.972972972972973,
+      "equal_task_natural": 0.015165165165165166,
+      "raw_canonical_disagreements": 0
+    },
+    "qwen-3.5-flash": {
+      "eligible_placements": 117,
+      "validated_placements": 117,
+      "invalid_reasons": {},
+      "errors": 117,
+      "tasks": 31,
+      "wrong_source_models": 11,
+      "donor_models": 1,
+      "donor_episodes": 31,
+      "distinct_modified_donor_calls": 60,
+      "comparisons_per_error_range": [
+        1,
+        1
+      ],
+      "inserted_verdicts": {
+        "different": 117
+      },
+      "natural_verdicts_on_same_errors": {
+        "different": 3,
+        "insufficient": 114
+      },
+      "errors_detected_in_all_comparisons": 117,
+      "errors_detected_in_some_comparisons": 0,
+      "errors_detected_in_no_comparison": 0,
+      "equal_error_mean_detection": 1,
+      "natural_detection_on_same_errors": 0.02564102564102564,
+      "equal_task_inserted": 1,
+      "equal_task_natural": 0.01003584229390681,
+      "raw_canonical_disagreements": 0
+    }
+  },
+  "leave_out_one_donor_model_equal_error_rate_range": [
+    0.9929901960784314,
+    0.9966666666666667
+  ],
+  "positive_verdict_vs_all_required_bindings_disagreements": 0,
+  "insufficient_prior_lookups": {
+    "0": 9,
+    "1": 11
+  },
+  "insufficient_prior_bound_names": {
+    "0": 9,
+    "1": 11
+  },
+  "later_receipts_changed_in_primary_comparisons": 0,
+  "new_llm_calls": 0,
+  "openrouter_spend_usd": 0
+}
