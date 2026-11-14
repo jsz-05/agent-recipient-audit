@@ -1,0 +1,11 @@
+# Request-bound recipient receipts
+
+This plan was written before running the receipt experiment. The archive comparisons, the single-roster limitation and the 50 coworker controls were already known. The receipt experiment is a follow-up.
+
+Use the same 50 WorkBench tasks and all archived completed send and forward actions, including permitted actions. Resolve the employee names from the original request through the native company directory before replaying the agent's actions. The request uses one of five known templates. Cache that result for the episode, independent of the agent's lookups. Independently observe each new outbox row. The receipt issuer has no reference answers and the reviewer sees only receipt-scoped opaque identifiers and whether all requested names could be resolved. The target is the stored recipient, not delivery or an agent's assertion of success.
+
+Use WorkBench's reference actions only for scoring and selecting controls. Check the observed destination for every natural action against the previously validated outboxes and verify coverage by episode and step. For one controlled action on each task change the first attempted send or forward to the alphabetically first real coworker outside the reference set. Compare the receipt verdict and the weaker directory-membership rule. In the receipt, a match to a known permission permits the action, a mismatch with complete permission evidence rejects it, and all other cases are unresolved.
+
+Check deliberately ambiguous names, a missing entry, partially resolved two-person requests, an unsupported instruction, a missing commit, and a tool argument or agent report that disagrees with an actual outbox row. Keep these interface tests separate from the empirical denominator. As a sensitivity analysis, for each natural action on a two-name task let one name at a time fail to resolve. Report the distribution of justified decisions and abstentions; do not interpret the imposed failures as their incidence in deployment.
+
+Run offline against the bundled benchmark, with no model or network calls. A correct receipt under complete evidence is an implementation and coverage check. The research result about evaluating audits on successful versus naturally erroneous trajectories remains a separate measurement.
