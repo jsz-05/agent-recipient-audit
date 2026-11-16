@@ -1,0 +1,54 @@
+{
+  "archive different": {
+    "membership_rejections": 163,
+    "n": 163,
+    "receipt": {
+      "different": 163
+    },
+    "trace": {
+      "different": 4,
+      "insufficient": 159
+    }
+  },
+  "archive permitted": {
+    "membership_rejections": 0,
+    "n": 1246,
+    "receipt": {
+      "permitted": 1246
+    },
+    "trace": {
+      "insufficient": 16,
+      "permitted": 1230
+    }
+  },
+  "coworker swap different": {
+    "membership_rejections": 0,
+    "n": 50,
+    "receipt": {
+      "different": 50
+    },
+    "trace": {
+      "different": 47,
+      "insufficient": 3
+    }
+  },
+  "entirely_without_prior_directory_query": {
+    "different": {
+      "different": 138
+    },
+    "permitted": {
+      "permitted": 14
+    }
+  },
+  "interface_controls": 8,
+  "natural_episodes": 1144,
+  "one_unresolved_of_two": {
+    "different": {
+      "insufficient": 120
+    },
+    "permitted": {
+      "insufficient": 406,
+      "permitted": 406
+    }
+  }
+}

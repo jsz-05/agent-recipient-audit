@@ -1,0 +1,8 @@
+{"case": "ambiguous name", "expected": "insufficient", "receipt": {"committed": 1, "permitted": [null]}, "verdict": "insufficient"}
+{"case": "partially bound; known recipient", "expected": "permitted", "receipt": {"committed": 1, "permitted": [1, null]}, "verdict": "permitted"}
+{"case": "partially bound; neither known", "expected": "insufficient", "receipt": {"committed": 2, "permitted": [1, null]}, "verdict": "insufficient"}
+{"case": "absent name", "expected": "insufficient", "receipt": {"committed": 1, "permitted": [null]}, "verdict": "insufficient"}
+{"case": "unsupported request", "expected": "insufficient", "receipt": {"committed": 1, "permitted": [null]}, "verdict": "insufficient"}
+{"case": "no committed action", "expected": "insufficient", "receipt": {"committed": null, "permitted": [1]}, "verdict": "insufficient"}
+{"case": "report disagrees with commit: different", "expected": "different", "receipt": {"committed": 2, "permitted": [1]}, "verdict": "different"}
+{"case": "report disagrees with commit: permitted", "expected": "permitted", "receipt": {"committed": 1, "permitted": [1]}, "verdict": "permitted"}
