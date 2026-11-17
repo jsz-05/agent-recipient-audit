@@ -1,0 +1,59 @@
+{
+  "request_id": "4a332d7ea9b34ab09266869262d6ae95",
+  "response": {
+    "id": "gen-1795335939-R8KnbCDe6Ltwj3WrlkYn",
+    "object": "chat.completion",
+    "created": 1795335939,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nDone! Here's a summary:\n\n- **Found 1 email** from Chenwei Zhang (chenwei.zhang@atlas.com) about \"Update on Supply Chain Enhancement Workshop\" from last week:\n  - **Date:** November 23, 2023 at 2:46 PM\n  - **Subject:** Update on Supply Chain Enhancement Workshop\n  - **Body:** Reminder about the workshop, asking everyone to be prepared.\n\n- **Forwarded** to Carlos Rodriguez (carlos.rodriguez@atlas.com) ✅\n\nThat was the only matching email from chenwei in that date range. Let me know if you need anything else!",
+          "refusal": null,
+          "reasoning": "The email has been forwarded successfully to Carlos. Let me summarize what I found and did.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The email has been forwarded successfully to Carlos. Let me summarize what I found and did.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2526,
+      "completion_tokens": 161,
+      "total_tokens": 2687,
+      "cost": 0.000504375,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1568,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000504375,
+        "upstream_inference_prompt_cost": 0.0002025,
+        "upstream_inference_completions_cost": 0.000301875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 24,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.000504375,
+  "seconds": 5.894468458136544
+}

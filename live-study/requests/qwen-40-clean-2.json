@@ -1,0 +1,250 @@
+{
+  "request_id": "bbc40d0f70e545bb9c802e134d9bf469",
+  "payload": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "The current date is 2023-11-30 00:00:00."
+      },
+      {
+        "role": "user",
+        "content": "carlos needs all the emails from chenwei last week about 'Update on Supply Chain Enhancement Workshop'. Can you forward them?"
+      },
+      {
+        "role": "assistant",
+        "content": "\n\nI'll help with that. Let me first find Carlos's email address and search for the relevant emails from last week (Nov 20–26).\n\n\n",
+        "refusal": null,
+        "reasoning": "The user wants me to find emails from \"chenwei\" about \"Update on Supply Chain Enhancement Workshop\" from last week (last week would be November 20-26, 2023, since today is November 30, 2023). Then I need to forward them to \"carlos\".\n\nFirst, I need to:\n1. Find carlos's email address\n2. Search for the emails from chenwei about the workshop from last week\n\nLet me do both of these in parallel since they're independent.\n",
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "chatcmpl-tool-881132ea8f8d2793",
+            "function": {
+              "name": "company_directory__find_email_address",
+              "arguments": "{\"name\": \"Carlos\"}"
+            }
+          },
+          {
+            "type": "function",
+            "index": 1,
+            "id": "chatcmpl-tool-b82f057251c3be43",
+            "function": {
+              "name": "email__search_emails",
+              "arguments": "{\"query\": \"Update on Supply Chain Enhancement Workshop chenwei\", \"date_min\": \"2023-11-20\", \"date_max\": \"2023-11-26\"}"
+            }
+          }
+        ],
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "The user wants me to find emails from \"chenwei\" about \"Update on Supply Chain Enhancement Workshop\" from last week (last week would be November 20-26, 2023, since today is November 30, 2023). Then I need to forward them to \"carlos\".\n\nFirst, I need to:\n1. Find carlos's email address\n2. Search for the emails from chenwei about the workshop from last week\n\nLet me do both of these in parallel since they're independent.\n",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "chatcmpl-tool-881132ea8f8d2793",
+        "content": "[\"carlos.rodriguez@atlas.com\"]"
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "chatcmpl-tool-b82f057251c3be43",
+        "content": "[{\"email_id\": \"00000337\", \"inbox/outbox\": \"inbox\", \"sender/recipient\": \"chenwei.zhang@atlas.com\", \"subject\": \"Update on Supply Chain Enhancement Workshop\", \"sent_datetime\": \"2023-11-23 14:46:00\", \"body\": \"Sam,\\\\n\\\\nReminder about the Supply Chain Enhancement Workshop next week. Let's make sure we're all prepared.\\\\n\\\\nBest,\\\\nChenwei\"}]"
+      },
+      {
+        "role": "assistant",
+        "content": "\n\nI found one email from Chenwei last week matching that subject. Let me forward it to Carlos now.\n\n",
+        "refusal": null,
+        "reasoning": "I found Carlos's email address: carlos.rodriguez@atlas.com\nAnd I found one email from chenwei about the workshop from last week:\n- email_id: 00000337\n- subject: \"Update on Supply Chain Enhancement Workshop\"\n- sent: 2023-11-23\n\nLet me forward this email to carlos.\n",
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "chatcmpl-tool-b06b6ab0cc00c7c0",
+            "function": {
+              "name": "email__forward_email",
+              "arguments": "{\"email_id\": \"00000337\", \"recipient\": \"carlos.rodriguez@atlas.com\"}"
+            }
+          }
+        ],
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "I found Carlos's email address: carlos.rodriguez@atlas.com\nAnd I found one email from chenwei about the workshop from last week:\n- email_id: 00000337\n- subject: \"Update on Supply Chain Enhancement Workshop\"\n- sent: 2023-11-23\n\nLet me forward this email to carlos.\n",
+            "format": "unknown",
+            "index": 0
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "chatcmpl-tool-b06b6ab0cc00c7c0",
+        "content": "Email forwarded successfully."
+      }
+    ],
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "email__get_email_information_by_id",
+          "description": "\n    Retrieves specific details of an email by its ID.\n\n    Parameters\n    ----------\n    email_id : str, optional\n        Unique ID of the email.\n    field : str, optional\n        Specific field to return. Available fields: \"email_id\", \"sender\", \"subject\", \"sent_date\", \"body\", \"inbox/outbox\".\n\n    Returns\n    -------\n    email_information : dict\n        Information of the specified email for the given ID and field.\n\n    Examples\n    --------\n    >>> email.get_email_information_by_id(\"12345678\", \"subject\")\n    {{\"subject\": \"Project Update\"}}\n\n    >>> email.get_email_information_by_id(\"12345678\", \"sent_date\")\n    {{\"sent_date\": \"2024-01-10 09:30:00\"}}\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "email_id": {
+                "type": "string",
+                "description": "Email Id"
+              },
+              "field": {
+                "type": "string",
+                "description": "Field"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "email__search_emails",
+          "description": "\n    Searches for emails matching the given query across subject, body, or sender fields.\n    The function matches an email if all words in the query appear in any of these fields.\n\n    Parameters\n    ----------\n    query : str, optional\n        Search query, matching terms in subject, body, or sender fields.\n    date_min : str, optional\n        Lower date limit for the email's sent date (inclusive). Format: \"YYYY-MM-DD\"\n    date_max : str, optional\n        Upper date limit for the email's sent date (inclusive). Format: \"YYYY-MM-DD\"\n\n    Returns\n    -------\n    emails : list\n        List of emails matching the query criteria. Returns at most 5 emails.\n\n    Examples\n    --------\n    >>> email.search_emails(\"Project Update\")\n    [{{\"email_id\": \"12345678\", \"inbox/outbox\": \"inbox\", \"subject\": \"Project Update\", \"sender/recipient\": \"jane@example.com\", \"sent_datetime\": \"2024-01-10 09:30:00\", \"body\": \"Please find the project update attached.\"}}]\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string",
+                "description": "Query"
+              },
+              "date_min": {
+                "type": "string",
+                "description": "Date Min"
+              },
+              "date_max": {
+                "type": "string",
+                "description": "Date Max"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "email__send_email",
+          "description": "\n    Sends an email to the specified recipient.\n\n    Parameters\n    ----------\n    recipient : str, optional\n        Email address of the recipient.\n    subject : str, optional\n        Subject line of the email.\n    body : str, optional\n        Body content of the email.\n\n    Returns\n    -------\n    message : str\n        Confirmation message of the email being sent.\n\n    Examples\n    --------\n    >>> email.send_email(\"jane@example.com\", \"Meeting Reminder\", \"Don't forget our meeting at 10am tomorrow.\")\n    \"Email sent successfully.\"\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "recipient": {
+                "type": "string",
+                "description": "Recipient"
+              },
+              "subject": {
+                "type": "string",
+                "description": "Subject"
+              },
+              "body": {
+                "type": "string",
+                "description": "Body"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "email__delete_email",
+          "description": "\n    Deletes an email by its ID.\n\n    Parameters\n    ----------\n    email_id : str, optional\n        Unique ID of the email to be deleted.\n\n    Returns\n    -------\n    message : str\n        Message indicating whether the deletion was successful.\n\n    Examples\n    --------\n    >>> email.delete_email(\"12345678\")\n    \"Email deleted successfully.\"\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "email_id": {
+                "type": "string",
+                "description": "Email Id"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "email__forward_email",
+          "description": "\n    Forwards an email to the specified recipient.\n\n    Parameters\n    ----------\n    email_id : str, optional\n        Unique ID of the email to be forwarded.\n    recipient : str, optional\n        Email address of the recipient.\n\n    Returns\n    -------\n    message : str\n        Message indicating whether the email was forwarded successfully.\n\n    Examples\n    --------\n    >>> email.forward_email(\"12345678\", \"jane@example.com\")\n    \"Email forwarded successfully.\"\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "email_id": {
+                "type": "string",
+                "description": "Email Id"
+              },
+              "recipient": {
+                "type": "string",
+                "description": "Recipient"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "email__reply_email",
+          "description": "\n    Replies to an email by its ID.\n\n    Parameters\n    ----------\n    email_id : str, optional\n        Unique ID of the email to be replied.\n    body : str, optional\n        Body content of the email.\n\n    Returns\n    -------\n    message : str\n        Confirmation message of the email being replied.\n\n    Examples\n    --------\n    >>> email.reply_email(\"12345678\", \"Thank you for the update.\")\n    \"Email replied successfully.\"\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "email_id": {
+                "type": "string",
+                "description": "Email Id"
+              },
+              "body": {
+                "type": "string",
+                "description": "Body"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "company_directory__find_email_address",
+          "description": "\n    Finds the email address of an employee by their name.\n\n    Parameters\n    ----------\n    name : str, optional\n        Name of the person.\n\n    Returns\n    -------\n    email_address : list[str]\n        Email addresses of the person.\n\n    Examples\n    --------\n    >>> directory.find_email_address(\"John\")\n    [\"john.smith@example.com\"]\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto",
+    "max_tokens": 4096,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "provider": {
+      "only": [
+        "deepinfra/fp8"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true,
+      "zdr": true,
+      "data_collection": "deny",
+      "max_price": {
+        "prompt": 0.15,
+        "completion": 1.875
+      }
+    }
+  }
+}

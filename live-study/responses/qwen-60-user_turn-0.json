@@ -1,0 +1,79 @@
+{
+  "request_id": "0f1ffa5660cd457abc525eb7a72d06ba",
+  "response": {
+    "id": "gen-1795335956-RStPl5fpLmTghyLC5TlU",
+    "object": "chat.completion",
+    "created": 1795335956,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "The user wants me to forward their most recent email from \"fatima\" to \"kofi\". I need to:\n\n1. First, search for emails from \"fatima\" to find the most recent one\n2. Then find kofi's email address using the company directory\n3. Forward the email to kofi\n\nLet me do steps 1 and 2 in parallel since they're independent.\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "chatcmpl-tool-adca93d4b9bf4cd6",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"fatima\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "chatcmpl-tool-82c63c57d75bab55",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"kofi\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to forward their most recent email from \"fatima\" to \"kofi\". I need to:\n\n1. First, search for emails from \"fatima\" to find the most recent one\n2. Then find kofi's email address using the company directory\n3. Forward the email to kofi\n\nLet me do steps 1 and 2 in parallel since they're independent.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1754,
+      "completion_tokens": 145,
+      "total_tokens": 1899,
+      "cost": 0.000358575,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1568,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000358575,
+        "upstream_inference_prompt_cost": 8.67e-05,
+        "upstream_inference_completions_cost": 0.000271875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 81,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.000358575,
+  "seconds": 4.9824145410675555
+}

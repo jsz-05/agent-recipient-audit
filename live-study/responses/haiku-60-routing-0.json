@@ -1,0 +1,80 @@
+{
+  "request_id": "92567b9d8a5d491f84c9f8de30b3359b",
+  "response": {
+    "id": "gen-1795335911-Ej3kIaplwB0qi4axgcMN",
+    "object": "chat.completion",
+    "created": 1795335911,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "I'm searching for emails from Fatima by matching her name in the query, then I'll pick the most recent one. Next I need its email ID so I can forward it to Kofi, looking up his address in the directory. The search has to finish first, but the directory lookup can run at the same time.\n\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_01MVEnpJUdbHuRdbc3woYeGw",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"fatima\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "toolu_vrtx_01Br9MYZb4J82fCfr374suvj",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"kofi\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'm searching for emails from Fatima by matching her name in the query, then I'll pick the most recent one. Next I need its email ID so I can forward it to Kofi, looking up his address in the directory. The search has to finish first, but the directory lookup can run at the same time.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "CAQS7AUKEggUEAIYAjgBQgh0aGlua2luZxIM9CvMzhJPuXd/A3EfGgy5A/ajhMVZtSAq7mQiMPp53kaOqPilVaDtM1Mzwgn8siMJm9Tc8SpgABb1O4Jj0ArhyhWqMxC/a/7PhFQOtiqHBcJyZE0qul+WKn6lBzo71X6Em7y74jMuET9F5xobbLuZKntdldP2SQFUU9DF4wZYvd2mWRAFOKx7all0CQCHb/NoLfzGpZhCkEuV9971YXvKCeaj4Fhd/6tWVmjgnkFVBUzoJfqKku+HEEdilpt4v0sscwaSi33xXnhhnuRsqt9VP+pQnRX3unzny1zMJDSkT7nM9+RJJHH5WyidSaNlGm322H94GfBcjrtMTREtuQDUX/mPGX7q1KPM/LpegS57k3evnockU3GonS8xL7sDzgSW4OJlF32fSkI12N6uiRLCMPBjVPs1EFioLwkQKlVOcfjPgT1AydqeBvUh1YWs7c26R4CERufH6JDphkL0HBO8KBWnEtJis71di9cqyO6nvV/ErEIQa1qGxiBhuOpIhAm/3dLyO4cYBWMJyQMDhIKagGf/yba6zcPHeUppfO+xRRF3ZMATOQS1N0Xaxwb8KIQeHaLx2VS81Jn2iCKDD+M6ngBwcSZpbjyFaHgMIKC00+KERpltELWpIz7i7bk9wEBXXHVc8SYPi66OAnYSfhpWQ7aTCPtaWdi/YHDSwaEz1Dpi8HuWTwIuU3PJGHTBqXCzYejyg3LQwdChH49zti4J3PhNj1OboaidmWVKYbOkmK/ArbRr37abTGTW6mDyVbYQBuU4K0qE9eoMFSRDATPadA36iE/PN+/tRVlYTby+NjUf8UaeKQrEM5TE9YeFh6TwR04HIFJeek8zafTynWnlFrLZO9ccp2ZkuDdrXVdcs3/p24Q/XJ9Xrn9AUhqNwHDPba9UzBYEnnO4WCCsJxmXfc6UmPiNl9qOOwDyS74IgKSIx0a8MziZ8IKVlrlxv/WVZkBD95ocGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2511,
+      "completion_tokens": 184,
+      "total_tokens": 2695,
+      "cost": 0.0003431,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003431,
+        "upstream_inference_prompt_cost": 0.0002511,
+        "upstream_inference_completions_cost": 9.2e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 78,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.0003431,
+  "seconds": 1.7042970000766218
+}

@@ -1,0 +1,79 @@
+{
+  "request_id": "ecd9e7a41f5a4e78ae6ee80614e39eea",
+  "response": {
+    "id": "gen-1795336010-OzoX8esIgmFCVa5tYpFU",
+    "object": "chat.completion",
+    "created": 1795336010,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI'll help you forward that email. Let me first find your most recent email from Fatima and look up Kofi's email address.\n\n\n",
+          "refusal": null,
+          "reasoning": "The user wants me to forward their most recent email from \"fatima\" to \"kofi\". I need to:\n1. First, search for emails from \"fatima\" to find the most recent one\n2. Then find kofi's email address\n3. Then forward the email to kofi\n\nLet me start by searching for emails from fatima and finding kofi's email address. These are independent calls, so I can make them simultaneously.\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "chatcmpl-tool-8783fb3cad5b0826",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"fatima\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "chatcmpl-tool-b56f291300d65d43",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"kofi\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to forward their most recent email from \"fatima\" to \"kofi\". I need to:\n1. First, search for emails from \"fatima\" to find the most recent one\n2. Then find kofi's email address\n3. Then forward the email to kofi\n\nLet me start by searching for emails from fatima and finding kofi's email address. These are independent calls, so I can make them simultaneously.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1754,
+      "completion_tokens": 185,
+      "total_tokens": 1939,
+      "cost": 0.000433575,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1568,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000433575,
+        "upstream_inference_prompt_cost": 8.67e-05,
+        "upstream_inference_completions_cost": 0.000346875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 96,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.000433575,
+  "seconds": 4.6795358748640865
+}

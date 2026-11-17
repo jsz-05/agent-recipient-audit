@@ -1,0 +1,79 @@
+{
+  "request_id": "411c5dca94c14613a0d52670b073392c",
+  "response": {
+    "id": "gen-1795335849-oW0xKzBQl7aYwvmfvMZr",
+    "object": "chat.completion",
+    "created": 1795335849,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "The user wants me to forward the latest email about 'Task Update on Add authentication for email notification' to olga. Let me break this down:\n\n1. First, I need to find the email about 'Task Update on Add authentication for email notification'\n2. Then I need to find olga's email address\n3. Finally, forward the email to olga\n\nLet me search for the email and find olga's email address simultaneously since these are independent operations.\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "chatcmpl-tool-8f182654806c7dd4",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"Task Update on Add authentication for email notification\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "chatcmpl-tool-992ef7e3634d5ccb",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"olga\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to forward the latest email about 'Task Update on Add authentication for email notification' to olga. Let me break this down:\n\n1. First, I need to find the email about 'Task Update on Add authentication for email notification'\n2. Then I need to find olga's email address\n3. Finally, forward the email to olga\n\nLet me search for the email and find olga's email address simultaneously since these are independent operations.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1761,
+      "completion_tokens": 165,
+      "total_tokens": 1926,
+      "cost": 0.000397125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1568,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000397125,
+        "upstream_inference_prompt_cost": 8.775e-05,
+        "upstream_inference_completions_cost": 0.000309375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 113,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.000397125,
+  "seconds": 4.080851417034864
+}

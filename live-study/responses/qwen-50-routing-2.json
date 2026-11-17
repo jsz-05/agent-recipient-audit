@@ -1,0 +1,59 @@
+{
+  "request_id": "32f9bfd71ce54d25a6aee909d86ea552",
+  "response": {
+    "id": "gen-1795335938-8zjDWLKxSLkRH99h4Tig",
+    "object": "chat.completion",
+    "created": 1795335938,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nDone! I've forwarded the latest email about **'Task Update on Add authentication for email notification'** (sent by Raj Patel on 2023-11-30) to **olga.petrova@atlas.com**.",
+          "refusal": null,
+          "reasoning": "The email has been forwarded successfully to olga.petrova@atlas.com.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The email has been forwarded successfully to olga.petrova@atlas.com.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2999,
+      "completion_tokens": 70,
+      "total_tokens": 3069,
+      "cost": 0.0004047,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1568,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004047,
+        "upstream_inference_prompt_cost": 0.00027345,
+        "upstream_inference_completions_cost": 0.00013125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 18,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.0004047,
+  "seconds": 2.492736625019461
+}

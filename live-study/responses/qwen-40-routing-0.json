@@ -1,0 +1,79 @@
+{
+  "request_id": "5961f0446ad343f2a6d75e88ce9174a5",
+  "response": {
+    "id": "gen-1795335857-bynAfWB4UrJiXUsIMEGM",
+    "object": "chat.completion",
+    "created": 1795335857,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI'll help with that. Let me first search for those emails and find Carlos's email address.\n\n\n",
+          "refusal": null,
+          "reasoning": "The user wants me to:\n1. Find all emails from \"Chenwei\" from last week (last week would be 2023-11-20 to 2023-11-26) about \"Update on Supply Chain Enhancement Workshop\"\n2. Forward them to Carlos\n\nFirst, I need to find Chenwei's email address and Carlos's email address. I also need to search for the emails.\n\nLet me search for the emails first, and find the email addresses.\n\nLast week: The current date is 2023-11-30 (Wednesday). Last week would be Monday 2023-11-20 to Sunday 2023-11-26.\n\nLet me do all the independent calls at once:\n1. Search for emails with \"Update on Supply Chain Enhancement Workshop\" from Chenwei\n2. Find Carlos's email address\n3. Find Chenwei's email address\n\nActually, the search will help me find the emails. Let me search for the emails and find Carlos's email address simultaneously.\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "chatcmpl-tool-87457f4d8a76ad7a",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"Update on Supply Chain Enhancement Workshop chenwei\", \"date_min\": \"2023-11-20\", \"date_max\": \"2023-11-26\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "chatcmpl-tool-91630289535d7b65",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"Carlos\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to:\n1. Find all emails from \"Chenwei\" from last week (last week would be 2023-11-20 to 2023-11-26) about \"Update on Supply Chain Enhancement Workshop\"\n2. Forward them to Carlos\n\nFirst, I need to find Chenwei's email address and Carlos's email address. I also need to search for the emails.\n\nLet me search for the emails first, and find the email addresses.\n\nLast week: The current date is 2023-11-30 (Wednesday). Last week would be Monday 2023-11-20 to Sunday 2023-11-26.\n\nLet me do all the independent calls at once:\n1. Search for emails with \"Update on Supply Chain Enhancement Workshop\" from Chenwei\n2. Find Carlos's email address\n3. Find Chenwei's email address\n\nActually, the search will help me find the emails. Let me search for the emails and find Carlos's email address simultaneously.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1768,
+      "completion_tokens": 362,
+      "total_tokens": 2130,
+      "cost": 0.00076755,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1568,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00076755,
+        "upstream_inference_prompt_cost": 8.88e-05,
+        "upstream_inference_completions_cost": 0.00067875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 208,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.00076755,
+  "seconds": 7.389260167023167
+}

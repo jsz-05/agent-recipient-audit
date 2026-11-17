@@ -1,0 +1,89 @@
+{
+  "request_id": "12f9453bc1a5408cbc7415ebbd730eec",
+  "response": {
+    "id": "gen-1795335914-qoSAQrxsTthrTnNcPIT4",
+    "object": "chat.completion",
+    "created": 1795335914,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "I need to look up the email first, and then find the addresses for Amir and Akira. Those two lookups don't depend on each other, so I'll run them at the same time.\n\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_01J7DS18RBMEnFZbyKBaHCng",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"Update on feedback discussion\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "toolu_vrtx_01NPF2bzbJkjwmHj6agyQULk",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"amir\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 2,
+              "id": "toolu_vrtx_01RFvNesnREot9Swm5fzVsbG",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"akira\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I need to look up the email first, and then find the addresses for Amir and Akira. Those two lookups don't depend on each other, so I'll run them at the same time.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "CAQS7AQKEggUEAIYAjgBQgh0aGlua2luZxIMuU9ctJQsARd6Qr//Ggwor6dXV8IB7bw7/fYiMJz3mG8WvzmYJKok25jxXHBxUQh/sZHK6PfP90ilZIVuO/rTRNE+TTeOXhdlVP5EUyqHBCvRiGVgEgGd4W+GkYj8tw5gFDhuMftFTYbX7cBGoGAWopLNmrsEx6OC/JRSwOZD5CxcsQqZP1GNbe2waSX58HQAMw1f0raFHlzyxwbx59X85NxbAAP9+5l5KisktQtREMzzWlK5e5WSXkdFBEIWEWFeayetLtsFA3UtspV6pDVw6njJE4yILIfTSXaqpl4ziCBI8xOtEX/c5rfnq0hOynOuwiJVLk8wgfWMI8JeELNkU/Kdxwgn3R+PEqcAYm00tzYpBbnPMp0DXtrIxuTQkC4VeIjYEQq/QhX7HTrXFMJpseN5iHoNWZ1UYsi4kaFBMxF5T9mPv64cuaD6eXZh0PKDSmxi7Fv4PAky89BccpZs0lP07quwV+wMknBo2pOVaAf0fAYH1DNVxxjJpb+5hAe20VwWX02W2QrbgMQQlXLtVHdUVOeejxcGIjoOU2iBTFawY8hQ2ogB6xuEMYlkDDe/mwJIMhKKngy3nhhmGZYixxlV3//Ae5uFOyOez/YlE+chAG3xa7zCT9Ha0fZbxu1QpiXb9vBscb7XTQblBaGoXi+oTlzmM+qLVmyuEddoqk1aLeIlbZBSyrOV4Ff+cOblYwRtj8OwmbnqSuYsZ4AMIraUNarhcVRkB0kO0dZ8EpLBqR3xrSldoSrBRnH9y4v5rBemd8qKvPpoGNuK3ivEHNBQIVz1nBgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2520,
+      "completion_tokens": 200,
+      "total_tokens": 2720,
+      "cost": 0.000352,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000352,
+        "upstream_inference_prompt_cost": 0.000252,
+        "upstream_inference_completions_cost": 0.0001
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 37,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.000352,
+  "seconds": 2.390565790934488
+}

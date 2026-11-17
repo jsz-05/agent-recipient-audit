@@ -1,0 +1,252 @@
+{
+  "request_id": "077b3aa41a874bf4bb11d34d7923e819",
+  "payload": {
+    "model": "anthropic/claude-haiku-5.5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "The current date is 2023-11-30 00:00:00."
+      },
+      {
+        "role": "user",
+        "content": "Forward the latest email about 'Task Update on Add authentication for email notification' to olga"
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": "I'm going to search the emails for the subject to find the latest one, and at the same time look up Olga's email address. Both lookups can run in parallel.\n\n",
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "toolu_vrtx_01AUqj1ZqC59fghahVFNJ6oy",
+            "function": {
+              "name": "email__search_emails",
+              "arguments": "{\"query\": \"Task Update on Add authentication for email notification\"}"
+            }
+          },
+          {
+            "type": "function",
+            "index": 1,
+            "id": "toolu_vrtx_01TJ3DhpWxtZXh4oiJrgEnb3",
+            "function": {
+              "name": "company_directory__find_email_address",
+              "arguments": "{\"name\": \"olga\"}"
+            }
+          }
+        ],
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "I'm going to search the emails for the subject to find the latest one, and at the same time look up Olga's email address. Both lookups can run in parallel.\n\n",
+            "format": "anthropic-claude-v1",
+            "index": 0,
+            "signature": "CAQS5gQKEggUEAIYAjgBQgh0aGlua2luZxIMvPpiAn3AXeFeq4bUGgxVpqffoMJHqhLneiwiMBY2FaWJ6vZ6fCZxvFFoyNUCipmBDjkIn9NxPpBYCEgcckL3YmDBynlusN9l6u8CJCqBBJ2I3ez7pt8YeN8f3C1ZmjxrSd2pHpuXB+P8yzSxOtj7+Xc3AcFMJ81ESeH4enLr7pZcQ7lIXO7uNR0YnWfzIAy3+TmyZjuOCtYmadzBLoPx3hEqhA6tOz2VcB38xdjBTCoO35VtK9mTCvEjC1fduP0VDsOAzl00vvp4q2PZq48kEPfGmFkhYPye8MXq51g1LKn6L41G54V+iz/omx8LcApom319aKniRM0gK9/Lt03TT5U6jSWEZWNEK2rGf5FKE/L47UeyM6oZWAatvKXDtAInMhyjkXeL+BqpYRrNMkVl1zPb7f6bwo8XMi3VlmENgX2N5pngNfd1S7m57UgpTDlC9YqyHPdC310Vct3Ob92TaX5649znKVqtJpxz39OEz9K9Sj2t2bT++qmz0BvSn69D7PAI5e5MJfWuFqs5umuzn8k6voqF+6/EP9HfxCLB079Utyg4mTt4NIeB/TmkMkKj61ypvnWj8ZXOOEaxfV3kPS09wwZCmdJMMn3gn1yUAiMa5N/Grlf6QlAk6VHo9z/0fXNK4mjWVKt1OjYAy40biPxNGo3ONUlDoaCqhr3lelXaZ0O5vhbUiuq+7YLEndIOH2otZuiTa4X804FUYYRujSurxvChOLDnGNJL4QxQKm90K+xDksWZ4Qq1oHycAlKS77g/tY5S/Z0IPRUwwLqk+hgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "toolu_vrtx_01AUqj1ZqC59fghahVFNJ6oy",
+        "content": "[{\"email_id\": \"00000436\", \"inbox/outbox\": \"inbox\", \"sender/recipient\": \"raj.patel@atlas.com\", \"subject\": \"Task Update on Add authentication for email notification\", \"sent_datetime\": \"2023-11-30 15:34:33\", \"body\": \"Dear Sam,\\\\n\\\\nCompleted task 'Add authentication for email notification' ahead of schedule. Please review and let me know if any tweaks are needed.\\\\n\\\\nBest,\\\\nRaj\"}, {\"email_id\": \"00000199\", \"inbox/outbox\": \"inbox\", \"sender/recipient\": \"raj.patel@atlas.com\", \"subject\": \"Task Update on Add authentication for email notification\", \"sent_datetime\": \"2023-11-27 13:58:10\", \"body\": \"Dear Sam,\\\\n\\\\nStarting on 'Add authentication for email notification' today. Any preliminary thoughts or resources you recommend before I dive in?\\\\n\\\\nBest,\\\\nRaj\"}, {\"email_id\": \"00000165\", \"inbox/outbox\": \"inbox\", \"sender/recipient\": \"luis.ortiz@atlas.com\", \"subject\": \"Task Update on Add authentication for email notification\", \"sent_datetime\": \"2023-11-26 14:18:31\", \"body\": \"Sam,\\\\n\\\\nCompleted task 'Add authentication for email notification' ahead of schedule. Please review and let me know if any tweaks are needed.\\\\n\\\\nBest,\\\\nLuis\"}, {\"email_id\": \"00000289\", \"inbox/outbox\": \"inbox\", \"sender/recipient\": \"fatima.khan@atlas.com\", \"subject\": \"Task Update on Add authentication for email notification\", \"sent_datetime\": \"2023-11-21 12:49:23\", \"body\": \"Sam,\\\\n\\\\nRegarding task 'Add authentication for email notification', I've made significant progress but have hit a snag with UI responsiveness. Could use a brainstorm session.\\\\n\\\\nAdditionally, I wanted to touch base on some other areas we've been focusing on lately. Our team has been working tirelessly on improving our project management workflows and enhancing collaboration across departments. This effort includes adopting new tools, refining our communication strategies, and ensuring that all team members are fully aligned with our objectifs.\\\\n\\\\nRegards,\\\\nFatima\"}, {\"email_id\": \"00000286\", \"inbox/outbox\": \"inbox\", \"sender/recipient\": \"yuki.tanaka@atlas.com\", \"subject\": \"Task Update on Add authentication for email notification\", \"sent_datetime\": \"2023-11-20 15:07:46\", \"body\": \"Sam,\\\\n\\\\nI've been assigned 'Add authentication for email notification'. Excited to work on this and confident it will greatly improve our security protocols.\\\\n\\\\nBest,\\\\nYuki\"}]"
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "toolu_vrtx_01TJ3DhpWxtZXh4oiJrgEnb3",
+        "content": "[\"olga.petrova@atlas.com\"]"
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "refusal": null,
+        "reasoning": "I've got the latest message from raj, dated 2023-11-30 at 15:34, and it's the one to forward to olga.petrova@atlas.com. Only one Olga turned up, so I can go ahead with it.\n\n",
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "toolu_vrtx_01GZTK6scgnfKKivRpWG4yPe",
+            "function": {
+              "name": "email__forward_email",
+              "arguments": "{\"email_id\": \"00000436\", \"recipient\": \"olga.petrova@atlas.com\"}"
+            }
+          }
+        ],
+        "reasoning_details": [
+          {
+            "type": "reasoning.text",
+            "text": "I've got the latest message from raj, dated 2023-11-30 at 15:34, and it's the one to forward to olga.petrova@atlas.com. Only one Olga turned up, so I can go ahead with it.\n\n",
+            "format": "anthropic-claude-v1",
+            "index": 0,
+            "signature": "CAQSxAUKEggUEAIYAjgBQgh0aGlua2luZxIMzULSrB0lZGGscYQSGgxgve2l3SZaLJUADcEiME1KA8SzMRcqvybLJAKbFr/+6urmBSsIYD/6iWn/OnUZiHGPdQwzNNg9EQgA0mzbDSrfBK9s0zAqw3EWVQiY7gnU7r0h3yJjvKfgzeLW265MlN2MoBYH5U0IkYmtrl/GpD8JoqJ0lXmJ1CrFJvFp98r6LNlzmsf32u1X8NuhRiKdsHhkblKGeU/5LCZxgOiw3BzF7JTk1YDjpVekGTWNeQ7N5G6DhcQOqc6PKwCq9yNz8D6c5aaKT5Fvf0TeFSSf+j9PCn0KDsWq8+0kfauOYBMgY8Rj3rcgF9Z5AyHGgFBtcrJjiLdDgJgWa7K454INdSO+GfQGe0Nz28brOdqo1sukMmMjQPYqFcwDKagu7oMb7EFvS3CE6KLXZBRSSr1MT7a94oreB0LXc7lHVd9/nv1r1g9xvmCNZfcIlMBXlqaLCeDaljZO7hJ21xnnYkL5c9vYzkvI2QKsFvBd43gsRjQAS4zCI+JXRMBJ+iJFrDZOCwj4oWJFrXAAji47dOZhD9wb3ZDf67lc0fDI1irLv0a7riR3Bz5RkgBB/5qBuHVuBZMBx3bv/SDw566P0K/4eLK7XyqfjQb5IKE5842MIBIgA3PE7CLSUwiRxoS9heymOhhideEulV02jNEGYnsfs0U64MJ2lKNSLlHPYPRWCFBbvhC2U2OkjwgkNex4QR4wWf0og3dgsMVVXon1b7GCYf2SttjHt3TCG69MHUTHvx35q8YX34iGyP/mjXSu1uGxxD59BFCQ2mlAsSvbx5w1fUR505kxjuyiGH7WcbrR/a7kRSB92qoLWOHolKufmthpwM7o5QU9z7qDtlB82qWQOjVdRkt8X8l6P5L7p+V5Dy5O2yXa40hFLTAUSxCyPry0qUIYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "toolu_vrtx_01GZTK6scgnfKKivRpWG4yPe",
+        "content": "Email forwarded successfully."
+      }
+    ],
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "email__get_email_information_by_id",
+          "description": "\n    Retrieves specific details of an email by its ID.\n\n    Parameters\n    ----------\n    email_id : str, optional\n        Unique ID of the email.\n    field : str, optional\n        Specific field to return. Available fields: \"email_id\", \"sender\", \"subject\", \"sent_date\", \"body\", \"inbox/outbox\".\n\n    Returns\n    -------\n    email_information : dict\n        Information of the specified email for the given ID and field.\n\n    Examples\n    --------\n    >>> email.get_email_information_by_id(\"12345678\", \"subject\")\n    {{\"subject\": \"Project Update\"}}\n\n    >>> email.get_email_information_by_id(\"12345678\", \"sent_date\")\n    {{\"sent_date\": \"2024-01-10 09:30:00\"}}\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "email_id": {
+                "type": "string",
+                "description": "Email Id"
+              },
+              "field": {
+                "type": "string",
+                "description": "Field"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "email__search_emails",
+          "description": "\n    Searches for emails matching the given query across subject, body, or sender fields.\n    The function matches an email if all words in the query appear in any of these fields.\n\n    Parameters\n    ----------\n    query : str, optional\n        Search query, matching terms in subject, body, or sender fields.\n    date_min : str, optional\n        Lower date limit for the email's sent date (inclusive). Format: \"YYYY-MM-DD\"\n    date_max : str, optional\n        Upper date limit for the email's sent date (inclusive). Format: \"YYYY-MM-DD\"\n\n    Returns\n    -------\n    emails : list\n        List of emails matching the query criteria. Returns at most 5 emails.\n\n    Examples\n    --------\n    >>> email.search_emails(\"Project Update\")\n    [{{\"email_id\": \"12345678\", \"inbox/outbox\": \"inbox\", \"subject\": \"Project Update\", \"sender/recipient\": \"jane@example.com\", \"sent_datetime\": \"2024-01-10 09:30:00\", \"body\": \"Please find the project update attached.\"}}]\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string",
+                "description": "Query"
+              },
+              "date_min": {
+                "type": "string",
+                "description": "Date Min"
+              },
+              "date_max": {
+                "type": "string",
+                "description": "Date Max"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "email__send_email",
+          "description": "\n    Sends an email to the specified recipient.\n\n    Parameters\n    ----------\n    recipient : str, optional\n        Email address of the recipient.\n    subject : str, optional\n        Subject line of the email.\n    body : str, optional\n        Body content of the email.\n\n    Returns\n    -------\n    message : str\n        Confirmation message of the email being sent.\n\n    Examples\n    --------\n    >>> email.send_email(\"jane@example.com\", \"Meeting Reminder\", \"Don't forget our meeting at 10am tomorrow.\")\n    \"Email sent successfully.\"\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "recipient": {
+                "type": "string",
+                "description": "Recipient"
+              },
+              "subject": {
+                "type": "string",
+                "description": "Subject"
+              },
+              "body": {
+                "type": "string",
+                "description": "Body"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "email__delete_email",
+          "description": "\n    Deletes an email by its ID.\n\n    Parameters\n    ----------\n    email_id : str, optional\n        Unique ID of the email to be deleted.\n\n    Returns\n    -------\n    message : str\n        Message indicating whether the deletion was successful.\n\n    Examples\n    --------\n    >>> email.delete_email(\"12345678\")\n    \"Email deleted successfully.\"\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "email_id": {
+                "type": "string",
+                "description": "Email Id"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "email__forward_email",
+          "description": "\n    Forwards an email to the specified recipient.\n\n    Parameters\n    ----------\n    email_id : str, optional\n        Unique ID of the email to be forwarded.\n    recipient : str, optional\n        Email address of the recipient.\n\n    Returns\n    -------\n    message : str\n        Message indicating whether the email was forwarded successfully.\n\n    Examples\n    --------\n    >>> email.forward_email(\"12345678\", \"jane@example.com\")\n    \"Email forwarded successfully.\"\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "email_id": {
+                "type": "string",
+                "description": "Email Id"
+              },
+              "recipient": {
+                "type": "string",
+                "description": "Recipient"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "email__reply_email",
+          "description": "\n    Replies to an email by its ID.\n\n    Parameters\n    ----------\n    email_id : str, optional\n        Unique ID of the email to be replied.\n    body : str, optional\n        Body content of the email.\n\n    Returns\n    -------\n    message : str\n        Confirmation message of the email being replied.\n\n    Examples\n    --------\n    >>> email.reply_email(\"12345678\", \"Thank you for the update.\")\n    \"Email replied successfully.\"\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "email_id": {
+                "type": "string",
+                "description": "Email Id"
+              },
+              "body": {
+                "type": "string",
+                "description": "Body"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "company_directory__find_email_address",
+          "description": "\n    Finds the email address of an employee by their name.\n\n    Parameters\n    ----------\n    name : str, optional\n        Name of the person.\n\n    Returns\n    -------\n    email_address : list[str]\n        Email addresses of the person.\n\n    Examples\n    --------\n    >>> directory.find_email_address(\"John\")\n    [\"john.smith@example.com\"]\n    ",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto",
+    "max_tokens": 4096,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "provider": {
+      "only": [
+        "google-vertex/global"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true,
+      "zdr": true,
+      "data_collection": "deny",
+      "max_price": {
+        "prompt": 0.09999999999999999,
+        "completion": 0.5
+      }
+    }
+  }
+}

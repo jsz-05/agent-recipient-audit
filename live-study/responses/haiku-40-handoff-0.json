@@ -1,0 +1,80 @@
+{
+  "request_id": "b7d4fa5d89704499aec732624762353e",
+  "response": {
+    "id": "gen-1795335999-2M3CBK0t5Bav3g0aKCx6",
+    "object": "chat.completion",
+    "created": 1795335999,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "I'm pinning down the date as Thursday, November 30, 2023, so \"last week\" means roughly November 19 to 25 or 20 to 26. I'll run a search with a date range, and I also need to look up Carlos's email address in the company directory, and Chenwei's too.\n\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_01TC7T16NccoA3haYkhshQCu",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"Update on Supply Chain Enhancement Workshop chenwei\", \"date_min\": \"2023-11-19\", \"date_max\": \"2023-11-26\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "toolu_vrtx_01UvFgToMUxA1UmQW4PvSGUz",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"Carlos\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'm pinning down the date as Thursday, November 30, 2023, so \"last week\" means roughly November 19 to 25 or 20 to 26. I'll run a search with a date range, and I also need to look up Carlos's email address in the company directory, and Chenwei's too.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "CAQS5AUKEggUEAIYAjgBQgh0aGlua2luZxIMtuxKBBmk4idpLoQ0GgziX0mDfSq1B28GpIsiMIYSe3zqsvmymKavWNXAl6U5OMjUL6h69JIUmpk+8ieDBP+esORbzZLhsrN25elbTCr/BATdN77mU0J38NWjrrH7/GFKhNy39yMPQ/qRYZfquZ0NZjfFCMbpXHbzsP4/Eop2ah1ekFnYitG0WKY1ScM13fkNrpNMNQruN4yv1EHBjMH0VQNf81V/0OCobTaoGofL9YmyPJlTyZeEIsam8tRkNePTFyT+nw+Q4mQsZrB/S0gaB2IRmftGHlwMFPzjekXdohI4EBMDWd0uxlOX5LptA3IZYyfGD0XYqiqMTdPfKFL4x8nSCcnOy22AsZTtLH7ENCTFk+JS/6ji+59B86ie7Yju3ag3yNaIesuSQ7/wRkxe092drzw31jRkzjoPAnV9jdJ0cGXfkq+7fySlvOW90Ls3GjOIQXMiI79KfI91A3K1nFKztxrMBzd0Ke2VIWQQcJEmayECFmJHasHCXSb/+FAQrBrX5baXws4FcA4tbPTwZ+G92v+AHIU5o+6lMe4gY9W1dz84kZWSuwnM+uXitO2CYmv7kqENBiKRrGLhpN0DgRqvt/ZhDvhNFu+gvDPi664zoujCuJbjvWTkqWzlsxDoAs70XrdsMgwi/R7mPx9RC6j2FlFr+tw5aJJfFnmr3sLhchPGVRj/G04TBjWvanT3VwBcO7bDHrqvbimqmdbHsEozOjesMijppEKnEq1Ch/ZR2KTGKxZcDvp/6qmO1UmnH2bjgG47wazgyOBwNzRrTkRg6siCYDS6RWujB9RZwUJHcsf74Y/JlfBOuWqOkJgENew1bH2K3Qb+09m7XH8i7PwUd2vuAgG90y2+Pqwt1kupzrda46kjxD07tGhetOJ9RdXZS9w4DFZsbHzMViUmtyqr0mMVEre3n2MkHwqJS31k0ToHxRY2etCVaDfPsxgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2541,
+      "completion_tokens": 282,
+      "total_tokens": 2823,
+      "cost": 0.0003951,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003951,
+        "upstream_inference_prompt_cost": 0.0002541,
+        "upstream_inference_completions_cost": 0.000141
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 100,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.0003951,
+  "seconds": 1.856027500005439
+}

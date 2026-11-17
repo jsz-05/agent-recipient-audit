@@ -1,0 +1,80 @@
+{
+  "request_id": "1f1951be182d46fe8e0b0f36d48015c5",
+  "response": {
+    "id": "gen-1795335920-nwLleyKizZ2a75RNo4CN",
+    "object": "chat.completion",
+    "created": 1795335920,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "I'm working from today's date, Thursday 2023-11-30, so \"last week\" means roughly November 20 to 26. I'll search emails for \"Update on Supply Chain Enhancement Workshop\" within that range, and I'm also looking up Carlos's address in the company directory, since it might return more than one match.\n\nI'm adding \"chenwei\" as a possible sender to the search, using the same November 20 to 26 window, and running the directory lookup for both Carlos and chenwei at the same time.\n\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_01FpnFaKcEjVxSgMXc16yPQX",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"chenwei Update on Supply Chain Enhancement Workshop\", \"date_min\": \"2023-11-20\", \"date_max\": \"2023-11-26\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "toolu_vrtx_01QzrV4WRM84iXsPBVx8n74L",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"Carlos\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'm working from today's date, Thursday 2023-11-30, so \"last week\" means roughly November 20 to 26. I'll search emails for \"Update on Supply Chain Enhancement Workshop\" within that range, and I'm also looking up Carlos's address in the company directory, since it might return more than one match.\n\nI'm adding \"chenwei\" as a possible sender to the search, using the same November 20 to 26 window, and running the directory lookup for both Carlos and chenwei at the same time.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "CAQSzQgKEggUEAIYAjgBQgh0aGlua2luZxIM0pxHWeQJ/sgzlNPUGgwORnip+owyV1qEKKIiMJhRZ1bhjlZb1aRoMEwUmamyCiT/lQZ3Nu7pFWmkywtQ5f4QcMfja0Lu3tqYzDLO4CroB7eadW2u0LE6dSOm9ZCB9l++QRcn8EGEnhJ6VNJcVSpPFJvI+7FsFjCoPQZwIXnuRTBbiDhyZYgYysuL+4upTlgPbgswVdm6d/kz3NvFqlp4aMhgY4A/kiOd7d2lMHrsYj8g9E9gclgJzD7m7QnXXoW6qWKKlcevENYYEFmaAPYNtxN7UauXxtfH1Q4oFWLAHu4GLLEzAV4WDXikV3Pup52EnTV4qS+TAKFo6VZEP383zlZgPM+ZikTXofmuBXxN4f7h1En26PqAvzZPLT0lKJogPq5cKvZIcMMqmS+tic18xW88OoWn0b9ww0sACOEfKtKhg1hUMfQ3IVX2cNnJ2rPY9dnj79vAEI8ZLiZEJgODRFK/ARbQG754RiMVfbVEuGV9/Em58FhOZvDZDrin94VWqooEJ2eii+7pUwrvM/rh2HvKsQHbq3hjJCkcM+7gKce/VNn5bEailKXC0pUqE0ayiH2zDs2pxs2sx5KZypBRZulK8ZxcD5oRefpHT1BNGCwbxY/g2qbe1NT/Y7mzxTc1iLiNCDkHQ/LEZHDjKbg18BWb6SU/NshJJoKU5UD21igNdFrCdU38P30MPCRTP1STsltIny53SG5epO52YdnOpgkXIyAv1eZXP5lVgSc8q1bPZDJdwfmY70QdSGXv2dh++/iF8I7hfyDzd1OnMKSXKxZ1BzOVrWQkqE7xRtVCdB/f37l9LMpFL0uYptebrnFQWsGtjYhR1jZaO6jJTwmccN3I6sirHCbUpH+B73MfHpRjNQQz/Jw+mpbP27yHymeIMEac2ZPmmdNsfMEz0EoHtWEdiPlcdOYvBzI2MIdgLIq+bh7myP+GVQM63Ziq8621+eKM6Xd5n6tcWcCtQ9sKydIk0B30qk/MWNdqmHmknKSQLbWGRSPcmkU0o/gaeF2tRNYhhqSpLD7up+ikOjX30bM3KLACeOKTm4oHPUSQb02IJ4Drp9NSqPLOmYGsaD8d9gGl5a0pk+DBjdEOVX/104VfaHwlAVU/ktxrWVdjj311rBnD6NYNbgInjZILrfpvgKHx/Dh0OsfednIr2Ddk2AC3ONXUoxLcO21HxKZlCEXD5OccCg6/g+tWR0eNhSN4s8ZJcd6BLNqH7Hc9G/Xuos97VEkhUu99sOYhgYf4fIpUNDJqXAdjG8ASAjblexMBbW+s7oefh0xoGSSeajnjBvc01pqy6Gcg8qCSBd9bM2Jg5RxtMrFznQztPiTpaX2a06tyCbtOgv5tLuGEo2qgG0NwFeJ+HonhoD3AvKJ/TgdKebLZeEAOcGRworuGPeqswAdHB5NwGxJN0Oe6450yiMGcKVc0cQ0YAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2541,
+      "completion_tokens": 421,
+      "total_tokens": 2962,
+      "cost": 0.0004646,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004646,
+        "upstream_inference_prompt_cost": 0.0002541,
+        "upstream_inference_completions_cost": 0.0002105
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 239,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.0004646,
+  "seconds": 2.2005792499985546
+}

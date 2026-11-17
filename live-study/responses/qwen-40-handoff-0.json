@@ -1,0 +1,79 @@
+{
+  "request_id": "25f8ffaac48d4532a3262821e924cb85",
+  "response": {
+    "id": "gen-1795335924-lkERgP8QwXuKvO4PGelZ",
+    "object": "chat.completion",
+    "created": 1795335924,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI'll help with that. Let me search for the emails from chenwei about the Supply Chain Enhancement Workshop from last week, and also find Carlos's email address.\n\n\n",
+          "refusal": null,
+          "reasoning": "The user wants me to:\n1. Find all emails from \"chenwei\" from last week about \"Update on Supply Chain Enhancement Workshop\"\n2. Forward them to \"carlos\"\n\nLet me first find carlos's email address, and search for emails from chenwei about that topic from last week.\n\nCurrent date is 2023-11-30, so \"last week\" would be 2023-11-20 to 2023-11-26 (Monday to Sunday of the previous week). Actually, let me think about this more carefully. Today is Thursday, November 30, 2023. Last week would be November 20 (Monday) to November 26 (Sunday).\n\nLet me search for the emails and find carlos's email address simultaneously.\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "chatcmpl-tool-be5620f673c0aff9",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"chenwei Update on Supply Chain Enhancement Workshop\", \"date_min\": \"2023-11-20\", \"date_max\": \"2023-11-26\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "chatcmpl-tool-a8fe89e462662f9b",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"Carlos\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to:\n1. Find all emails from \"chenwei\" from last week about \"Update on Supply Chain Enhancement Workshop\"\n2. Forward them to \"carlos\"\n\nLet me first find carlos's email address, and search for emails from chenwei about that topic from last week.\n\nCurrent date is 2023-11-30, so \"last week\" would be 2023-11-20 to 2023-11-26 (Monday to Sunday of the previous week). Actually, let me think about this more carefully. Today is Thursday, November 30, 2023. Last week would be November 20 (Monday) to November 26 (Sunday).\n\nLet me search for the emails and find carlos's email address simultaneously.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1768,
+      "completion_tokens": 322,
+      "total_tokens": 2090,
+      "cost": 0.00069255,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1568,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00069255,
+        "upstream_inference_prompt_cost": 8.88e-05,
+        "upstream_inference_completions_cost": 0.00060375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 156,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.00069255,
+  "seconds": 8.693639792036265
+}

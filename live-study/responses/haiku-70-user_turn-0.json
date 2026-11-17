@@ -1,0 +1,89 @@
+{
+  "request_id": "683f0d31163c4738a5babed509cfdd0d",
+  "response": {
+    "id": "gen-1795336007-HmAyqG0nuSWWDjqzsHM6",
+    "object": "chat.completion",
+    "created": 1795336007,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "I'll search for the email first, since everything else depends on it. Once that's done, I can look up addresses for Amir and Akira at the same time, because those lookups don't depend on each other.\n\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_01Gk1zgdj98SHX6AbfRBU5ex",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"Update on feedback discussion\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "toolu_vrtx_01AmK4JNkCay2P5FY5LwuJHn",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"amir\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 2,
+              "id": "toolu_vrtx_01LhsexDXbUdYNeHX8X1Ai2i",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"akira\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'll search for the email first, since everything else depends on it. Once that's done, I can look up addresses for Amir and Akira at the same time, because those lookups don't depend on each other.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "CAQS7QQKEggUEAIYAjgBQgh0aGlua2luZxIM4uRoF5OkYoHA8srTGgw4R3lCBXOrNNGy7WwiMBXLX0T8eWuyq1GoDXv1ay9j9RF0JDknXOk8j7usqtvEeAyga6/VIlo4c0+DCJpFGyqIBAvsoO99g5iy470l5gTJ++aF2YqtcP3q3TC6vlCxfp8aOrdXw7iXgRNrywJjkrwOZyvTzp360Y2ycOL53nfyihuojSscfGUYKY6+JURTSRCi622vUCbbTHG1ReLysRxuduz8guEX4iIz7u9BneVJlTZRN5rnjzwSeBWnodcSK4LLRPlcbrbqqU37AErdq/00YsstpjUibohTCY0cEjAn8XSfQ6HyrAPBd9oSKCn95w49ay59qB/nZyC41U4/gFKvvZB/4w1M46f5TfV4DDF2n34T2EuMBZsrd/XDQkuHjm2O5jxl2yfHh8tgPuvuRpe9+LBm+/K/S9ylAePLflE7XLzMuOF2e35RqbAoeJpeoFjd/CmCZhu3NAONp0Jp3iE6kjhqiiIMh9otc1ug2zGrIrtz0uF+fZOhLjjCMTPv3pOlF5ZblQuh1OrG4a/LIiYv/ypTeVXcOIVEk/RPkJUiT5JHdaeW8Rxioz3Qbo1pbjyzAhjDjYilAFYukZzPXCPDapO2YU/gw06E5t+WahnFGtXZ9UM/zJPdJzJjnw7A9Kxm4UYVxxml/8nnoTBbIBWYwrXRjTorG/LzXMR7nvPZRu/A5GGAL/CqmhtyYrSHjGeAdSm2GAJNDtI03duxLOM+rdj1XeotIH5/gCM/Ijq0OIROQUc/XXASTrq1gordrnpcfJqv/tFfCKIYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2520,
+      "completion_tokens": 200,
+      "total_tokens": 2720,
+      "cost": 0.000352,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000352,
+        "upstream_inference_prompt_cost": 0.000252,
+        "upstream_inference_completions_cost": 0.0001
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 37,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.000352,
+  "seconds": 1.4840635829605162
+}

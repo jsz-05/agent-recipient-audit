@@ -1,0 +1,88 @@
+{
+  "request_id": "78f6a29bab8649d98377ce14982a2675",
+  "response": {
+    "id": "gen-1795335889-NQEgkP7T9Pb7pMsXfiIw",
+    "object": "chat.completion",
+    "created": 1795335889,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI'll search for the email and look up the email addresses for Amir and Akira simultaneously.\n\n\n\n",
+          "refusal": null,
+          "reasoning": "The user wants me to forward the last email about 'Update on feedback discussion' to amir and akira. Let me break this down:\n\n1. First, I need to find the email about 'Update on feedback discussion'\n2. Then, I need to find the email addresses of amir and akira\n3. Then forward the email to both\n\nLet me start by searching for the email and finding the email addresses in parallel.\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "chatcmpl-tool-8874a5906dcc92f2",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"Update on feedback discussion\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "chatcmpl-tool-870e4f9c8baec73d",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"Amir\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 2,
+              "id": "chatcmpl-tool-aee6a43410d0d6f9",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"Akira\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to forward the last email about 'Update on feedback discussion' to amir and akira. Let me break this down:\n\n1. First, I need to find the email about 'Update on feedback discussion'\n2. Then, I need to find the email addresses of amir and akira\n3. Then forward the email to both\n\nLet me start by searching for the email and finding the email addresses in parallel.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1760,
+      "completion_tokens": 206,
+      "total_tokens": 1966,
+      "cost": 0.00047385,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1568,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00047385,
+        "upstream_inference_prompt_cost": 8.76e-05,
+        "upstream_inference_completions_cost": 0.00038625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 98,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.00047385,
+  "seconds": 5.362716041970998
+}

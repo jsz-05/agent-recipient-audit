@@ -1,0 +1,71 @@
+{
+  "request_id": "1f40fc993feb47c5a65e4204e0b5fde3",
+  "response": {
+    "id": "gen-1795335953-OP7woE3b28bUalIMJeWi",
+    "object": "chat.completion",
+    "created": 1795335953,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "I've got the latest message from raj, dated 2023-11-30 at 15:34, and it's the one to forward to olga.petrova@atlas.com. Only one Olga turned up, so I can go ahead with it.\n\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_01GZTK6scgnfKKivRpWG4yPe",
+              "function": {
+                "name": "email__forward_email",
+                "arguments": "{\"email_id\": \"00000436\", \"recipient\": \"olga.petrova@atlas.com\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I've got the latest message from raj, dated 2023-11-30 at 15:34, and it's the one to forward to olga.petrova@atlas.com. Only one Olga turned up, so I can go ahead with it.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "CAQSxAUKEggUEAIYAjgBQgh0aGlua2luZxIMzULSrB0lZGGscYQSGgxgve2l3SZaLJUADcEiME1KA8SzMRcqvybLJAKbFr/+6urmBSsIYD/6iWn/OnUZiHGPdQwzNNg9EQgA0mzbDSrfBK9s0zAqw3EWVQiY7gnU7r0h3yJjvKfgzeLW265MlN2MoBYH5U0IkYmtrl/GpD8JoqJ0lXmJ1CrFJvFp98r6LNlzmsf32u1X8NuhRiKdsHhkblKGeU/5LCZxgOiw3BzF7JTk1YDjpVekGTWNeQ7N5G6DhcQOqc6PKwCq9yNz8D6c5aaKT5Fvf0TeFSSf+j9PCn0KDsWq8+0kfauOYBMgY8Rj3rcgF9Z5AyHGgFBtcrJjiLdDgJgWa7K454INdSO+GfQGe0Nz28brOdqo1sukMmMjQPYqFcwDKagu7oMb7EFvS3CE6KLXZBRSSr1MT7a94oreB0LXc7lHVd9/nv1r1g9xvmCNZfcIlMBXlqaLCeDaljZO7hJ21xnnYkL5c9vYzkvI2QKsFvBd43gsRjQAS4zCI+JXRMBJ+iJFrDZOCwj4oWJFrXAAji47dOZhD9wb3ZDf67lc0fDI1irLv0a7riR3Bz5RkgBB/5qBuHVuBZMBx3bv/SDw566P0K/4eLK7XyqfjQb5IKE5842MIBIgA3PE7CLSUwiRxoS9heymOhhideEulV02jNEGYnsfs0U64MJ2lKNSLlHPYPRWCFBbvhC2U2OkjwgkNex4QR4wWf0og3dgsMVVXon1b7GCYf2SttjHt3TCG69MHUTHvx35q8YX34iGyP/mjXSu1uGxxD59BFCQ2mlAsSvbx5w1fUR505kxjuyiGH7WcbrR/a7kRSB92qoLWOHolKufmthpwM7o5QU9z7qDtlB82qWQOjVdRkt8X8l6P5L7p+V5Dy5O2yXa40hFLTAUSxCyPry0qUIYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3698,
+      "completion_tokens": 149,
+      "total_tokens": 3847,
+      "cost": 0.0004443,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004443,
+        "upstream_inference_prompt_cost": 0.0003698,
+        "upstream_inference_completions_cost": 7.45e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 60,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.0004443,
+  "seconds": 1.5837882908526808
+}

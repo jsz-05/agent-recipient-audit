@@ -1,0 +1,89 @@
+{
+  "request_id": "f258c57716c24b91b42d6e7cacf83bf3",
+  "response": {
+    "id": "gen-1795335941-LlDyFQygSgptUJSszpQH",
+    "object": "chat.completion",
+    "created": 1795335941,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "I'll search for the email first, and then look up addresses for Amir and Akira in the directory. Those two lookups don't depend on each other, so I'll run them in parallel.\n\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_012iPWfNmW1aoPyd9jSe139r",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"Update on feedback discussion\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "toolu_vrtx_01RZzN9C3s3ceikxuuAmMPDr",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"amir\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 2,
+              "id": "toolu_vrtx_018VPi5JzMJKh5M42D9znkg2",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"akira\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'll search for the email first, and then look up addresses for Amir and Akira in the directory. Those two lookups don't depend on each other, so I'll run them in parallel.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "CAQSsAUKEggUEAIYAjgBQgh0aGlua2luZxIM6CJEOjOsrBFvwAVhGgznyDpZkt8Kw2bFfA0iMJLFauPRGHP3eRCGSgputzI1Rs5HYg4HSokwzd39aTMyqzOV3iM6P0AK7rdHjfLUXirLBMIQz2KqxvEf+a+r1Z0bmW3xf30m5WeCv1V4MtluYUnj8pSvquyUZJo7HgQ97CJEYR38Ha9qH0vwJ0qDur2HoFu6/o/H2RfXXWknvJpFncYS74RLlucwOMVWFdNNIuhEFUS3qTmUy1s1tU/NaEAbGqR+JLo3LrFmtUBS5S5LQ0E+qcPiKvl1BeMojp1/TxOeKDj3msp2lbB0GIuSf/mVD5XlE3zbwrpncPzqCIzSf0+lGkVFphMhzRHKz04bRGoemk/rfGjcas3sLaRYCWSPvxG+ydG/NDQ2WFSDxIVfydTqufaWgH9v5YMQglmw3xOqS6Z0c2KZKPOT5XoBQrgzgMFi7InzJfpQhLWVJNKRUrnMuDHcQH0yn1H7eILy2y9rlcWItIihlaC3kqizWDNIE2bnUPoWBFoQUhHDt9NRtxeS7X3NZaUUY//eYNTplrnoVGyt9WpHqr7pZLo+Tc8uyllxHmqOLflQliq8AJ3dqSa2MjwZzprAHSPD9KG/uSIBfXBzuRyzmn4bVJrX5oV55HiBFna+RNgJM+EmNCP6i5j/aRyPWlmmMdQ6P3xPypwNW6L6OQp+xchkbfULFVxxOMj+746KaDN+BEQ2c/O9brc2fpqfCvOXhg2h/6v4j3N+EcC6fsYBLd5B/uFpBim4vIMEmSN/PFdSdaRTmkv3rgVBOK6P+OekR5n7QgsRejsh3VuYuLoXZINkuDRuEmTBj1QAygbJP3o8gZ8Lb22MHeOHBQwdDc3b2snG57Pwf9CD5bgC02gYXaNfB/kwGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2520,
+      "completion_tokens": 218,
+      "total_tokens": 2738,
+      "cost": 0.000361,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000361,
+        "upstream_inference_prompt_cost": 0.000252,
+        "upstream_inference_completions_cost": 0.000109
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 55,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.000361,
+  "seconds": 1.3063729170244187
+}

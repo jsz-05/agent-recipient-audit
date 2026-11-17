@@ -1,0 +1,80 @@
+{
+  "request_id": "618da252280543fcaabb88e60f1207ed",
+  "response": {
+    "id": "gen-1795336004-MUQ7ZNXFe9vMzZenpH4b",
+    "object": "chat.completion",
+    "created": 1795336004,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "I'm working out the date context first: today is Thursday, November 30, 2023, so last week would be Monday the 20th through Sunday the 26th. I'll search for the workshop update emails with that date range, and I still need to look up Carlos's email address in the directory.\n\nI'm going to run the search with the subject line and last week's date range, and I'll look up Carlos's address in the directory at the same time.\n\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_01PKp2J9uEPcPAAwSrN1rV23",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"Update on Supply Chain Enhancement Workshop\", \"date_min\": \"2023-11-20\", \"date_max\": \"2023-11-26\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "toolu_vrtx_01Sxov5HWXs5oPeR6tk8AABP",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"Carlos\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'm working out the date context first: today is Thursday, November 30, 2023, so last week would be Monday the 20th through Sunday the 26th. I'll search for the workshop update emails with that date range, and I still need to look up Carlos's email address in the directory.\n\nI'm going to run the search with the subject line and last week's date range, and I'll look up Carlos's address in the directory at the same time.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "CAQS1wcKEggUEAIYAjgBQgh0aGlua2luZxIMgRWouV8mQWCvpE+5Ggwwe1rRv+SvXWTlKiwiMBGbS8e+LJ+4gpHslwMQZAZrT1wkPzhnt5ZpQaLWboZeqyNbDDHySNYe6SjoPzwULiryBq2OeMP8CexbBsci4RNF+IparrWgmD41ljVoR/hIpDV7dd4SRXU9qqDZ1Q5HDz6za1yGiEbJtKLFDUql+RPFiau5l/zzRRKIeA9Y1pS2AG8T8LipEK5qGikZjcsOkHlY0yINgQabWKYdX7zH6/VxpVBnW0dJwfhCvLz/rORZx9d+n9RlMarLxroB/SukHTx0XS6iuIWZ8Z97PccTr/pcG0SkOCmHc2RIal69Ad00156Ieo7MFfqujBQS57o+fmTpe/l6xK1qPCKqE/MfgzSnz+CkPHuaSh4W0a9vi4M1dpRgnrLOFfQBUrGW0S/kwUcjkanhAmB8OnCR4HhPCuNWluvFAFPqpSikiT9ukllNzRa7AttWrX01VcCsD+56YXZMLlA5j5bIo/io2KQ06OqfSgSFPUE+9UAveQmpUuMzuaK9eiO/WbFQl3Orgu0eKijCNgUX//ZP2LWqHrmQSCBBUqUuS8EknxczP8CPm7s2eO3Bfs0jRwG8p2UvIw4WvNzQX49YSG9c/tPplEvGQNv8rX8i3tLrfgQbHTry6fhYJsqVlGMaOXbV9/M315ftLV8FkbBpo7xqXkBcli0YFqSkGgfX7ClkbnqfLVUXuDwsiA/vno/NMMZT12T+BPlBu4fTnkNLzuRfGt6yLgpBiBkx5mGdFTw2fCG1HnnWvICSH2/isHZSGWKhE2KzKMaMH9k1tcfyRaXicVxYYjrDwRhRmZhFB5IS0E7/TUCO+GG6/clGEOCT83FBW5zTe9PYv7oE47UIEqoYmhkS/OKmgLbpb2es1yAQula038v0F6uR7EhVdetufq78GIAqBXnD+3VzVai8kFj5SkFgERqQhEUV/Q3xWDkt7+jaW8iPQPbrchekQW+Zv7gdlqgglYKoT/PVXHyQ4sRtIc12rFaW2+loXM+y6mUdZK/DHFxKflV8dMWv53nEPecP0HfmBN5qtPbhsIcC0WD2IYMRjRaxmD5FdsuvXqGJ4xvYiCD84c8kJ7QUxc7hvxEe+V3MzLcWAJP6cQSw9y1dffQNegOCQOZz8JoAWLsvrThIjvOCeEkTVVOlIsylWvnW3da9hehT1YlzjCpQB8ROdSI8EAjvH3KiLlBZOZvjqjFnlTnfm9w/XrnaLZ08MAEKt8ioOvUtgv+ovBlTYf7q8bMCZ4VF54ke4OodnRgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2541,
+      "completion_tokens": 367,
+      "total_tokens": 2908,
+      "cost": 0.0004376,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004376,
+        "upstream_inference_prompt_cost": 0.0002541,
+        "upstream_inference_completions_cost": 0.0001835
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 189,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.0004376,
+  "seconds": 2.714956708950922
+}

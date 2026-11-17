@@ -1,0 +1,80 @@
+{
+  "request_id": "716aa885c0494767b9cdbd51deb73f16",
+  "response": {
+    "id": "gen-1795335847-112tYJDNP10y6Egx6WQi",
+    "object": "chat.completion",
+    "created": 1795335847,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": "The most recent \"Update on feedback discussion\" email is from Leila Azizi (Nov 19, 2023). I'll forward it to Amir and Akira.",
+          "refusal": null,
+          "reasoning": "I'm identifying the most recent email as 00000092, sent by Leila on November 19, 2023. Akira's is from November 9, so 00000092 is the latest overall. I'll forward it to amir.ali and akira.sato.\n\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_01R8TVofhgBzkLfrHUzzkS2w",
+              "function": {
+                "name": "email__forward_email",
+                "arguments": "{\"email_id\": \"00000092\", \"recipient\": \"amir.ali@atlas.com\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "toolu_vrtx_01NsndiCVZLf4UaD8G7FfouL",
+              "function": {
+                "name": "email__forward_email",
+                "arguments": "{\"email_id\": \"00000092\", \"recipient\": \"akira.sato@atlas.com\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'm identifying the most recent email as 00000092, sent by Leila on November 19, 2023. Akira's is from November 9, so 00000092 is the latest overall. I'll forward it to amir.ali and akira.sato.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "CAQS9wUKEggUEAIYAjgBQgh0aGlua2luZxIMwhae+BiFDr9WMSc8GgxASCmeAzncrB8BfmYiMD9vY4FhMxwXpiqPWZ1/LYyeAX3irot5X91lxe1h4mnA/rKAIuQVrq5bErG+uWy87iqSBQyK0G4dutVzYCDpF+oBRHT1mMcZPVXiOxXwpkwMSCgT6m8QVSeUDibLmc1HzdpAR1mrSlvSQV9daYdU9PC6QAMMSJDkdURFWCRWG82doug79/9cupnfL7gXbYhWjWmoB81qfbhwBPGEFjzptifVJV/xYVpxLOSAqrsLdYBzH01/s03p6WDhsp09UyVRPp1vLeb+AqIpMe54I+ivAxVw+XC806ccEf6dk+Q5a5hjv69KblixeXZs9cOmBNjAq1BlVoh+5/V9MrP0eYujFNTw6wUver0s8O/O5g9mWeyfW6xykv0ithxdH03VPvFSsElH4W7URJv+tFy96xv+inHkfHwlBoAPch5bLkuI069wcA/CZ3oTnG/zbJknTJiD38az9pQN6HVngoUjvGMWZA4SEHXZn+UFCdHGTF6o2Pll3dyLwHz0PIHUrUt42HaIrou09DCkOA6EcsJ18/Mu22XUs/x7cV7d5O6+NR3/mldCKpZbbT5BxjqbxnqJuPg3HEeHqRTbUdx629PtJaiRLXwqmB0fdUbtbUFcscMDQ8ZaekvZptauUFvb2z0PXI/2iEohZVQUrIZyKpkGFVf7uj0ez3roXlBZchK7WTdWXU5tII6kt5W4IOL7RYfeHj7cEw5/AxGxti2ClzAPGo5RD0WtIK9d/nhTKJfai3myW+aARsDyl1M+AsXHzNoNDpliuLfnzRgjCkWxXKsIOl4RmQfBxA7WJEGXHWXF2hhREwZafxV+mCz8EPE2ZGUoRCkUuTM5LqCApgSmjlgQQ1lmsylDcv11yznP2Gm+Stc1il7qLTo5NKxI/ikdlTzpLM/hI7v+1iMK7Aqs/G/FckoK9AmqAE5mJ2awUIJkAoT1ntgEdxy5G0EYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3814,
+      "completion_tokens": 302,
+      "total_tokens": 4116,
+      "cost": 0.0005324,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005324,
+        "upstream_inference_prompt_cost": 0.0003814,
+        "upstream_inference_completions_cost": 0.000151
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 79,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.0005324,
+  "seconds": 1.6802688329480588
+}

@@ -1,0 +1,51 @@
+{
+  "request_id": "8a5627c3f7364a9c996dec082a435065",
+  "response": {
+    "id": "gen-1795336009-6Y3yglNuOn4q5KAccadk",
+    "object": "chat.completion",
+    "created": 1795336009,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "I forwarded one email to Carlos Rodriguez (carlos.rodriguez@atlas.com).\n\n- **From:** chenwei.zhang@atlas.com\n- **Subject:** Update on Supply Chain Enhancement Workshop\n- **Sent:** 2023-11-23 14:46\n\nI searched November 20–26, the previous calendar week, and this was the only email from Chenwei with that subject. A second email with the same subject came from aisha.chen@atlas.com, so I didn't forward it.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3590,
+      "completion_tokens": 169,
+      "total_tokens": 3759,
+      "cost": 0.0004435,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004435,
+        "upstream_inference_prompt_cost": 0.000359,
+        "upstream_inference_completions_cost": 8.45e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.0004435,
+  "seconds": 1.2630732089746743
+}

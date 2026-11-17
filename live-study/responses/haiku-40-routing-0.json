@@ -1,0 +1,80 @@
+{
+  "request_id": "e79b6e30bd494f87a4da25fabf9a153d",
+  "response": {
+    "id": "gen-1795335890-2FSm5WYfgibWDhny0IKz",
+    "object": "chat.completion",
+    "created": 1795335890,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "I'm setting today's date as Thursday, November 30, 2023, so last week is roughly November 19 to 25 or 20 to 26. I'll search for the \"Update on Supply Chain Enhancement Workshop\" email within that range, and at the same time look up Carlos's email address.\n\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_018tbPE3gjem5AgZSy9CFSgT",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"Update on Supply Chain Enhancement Workshop chenwei\", \"date_min\": \"2023-11-20\", \"date_max\": \"2023-11-26\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "toolu_vrtx_01FGZcSCSqqxhG52SDy5d7rB",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"Carlos\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I'm setting today's date as Thursday, November 30, 2023, so last week is roughly November 19 to 25 or 20 to 26. I'll search for the \"Update on Supply Chain Enhancement Workshop\" email within that range, and at the same time look up Carlos's email address.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "CAQSzAYKEggUEAIYAjgBQgh0aGlua2luZxIMxw7AHBFBQgIKC+YAGgxoPcSywaQl/E6phqsiMLJE570kr3mS6Fro3NUtLPpiq1RyYvygmgn7yKBDErW4sVIndxHcQ+FQ3P06xwvMCCrnBVhrU2rW26rYUHyHmVqPTNjRhB/e+xx7DJcaVxrsxVwmj9hHauy8SCWpdQ8AD5YfqYoBC3hcj+juHNDG+lOWjbeY8iYT3YDyOzdMWqDlHCE8L7H4U07CE3Pnb0Re0glsonBJAVxOzsHxlfTkM/OcH4TsLw4biB6rgLXg9lnli1VNNoeOOm7rC/6SO1Qm+aGAYzmcPk2y6EEFnbcBHdPj1ObCBaHx/JMgOxBqKj7kTNy0nJokA8a2zTtTNpo7mHqzxP1BAsU6BrV1uhkt39YFaeBu6Xm2JDohv+aiuQt+Vkkuj7qQJrqDs6cHtZGb1KxQnTz7K1KPnb+NjLdl1o3Vt10tFaHM33hLF+Xd5aRC+cW/rq+QvhxKNd77G6I0KtsomVMyE7QYO1dgDImCrPR8QQ4n+L2Si+Y6Av39dEVXXDip08NGZ/nM2IggtyhKEhv9Ga5sBa1hlgJnwmGjYaoachncMjz4fMFN319TSt22rr0ASvUtiuj6qpgXa1gwUbZCG803pAaAe6vBxn+QCQ7jZQ1m/aL4LtwZLbeS/n3f/0j/QIkzYksoAiMtXlM+bC7sBG1vTJtiUJKM4erVdL+vhuZjgHDWilhK6WWZonLH7n9hu+QkQOUBdWX6pp/UYyM2sm/BehaJu+44ew8beO+QgdHgY4f2XDiwrtUKULHmYOECXtpheyBNUYse//9pLPQChJZwKip0stOuk3XuqVRElbFwFvxde8LdT9JgBVpcvNV0k3+H4S/GSbjXrCqPXA1tbEYmiXkySw2nt3I+42zKCx4pcn8WOHpqCwicja9hOvku+GjDSgTky7FOvvjnIAqNk+6DsoxkbuLQu7Nnd4qTlIzm+K1LIHLjeXgYxNkmRDbqrjHI8ooPM+C7RQPXDNM597TZcsVpbzejQYyP8Lo7ythefyoLupM9lI6YHTBqLjuBWnEwW+9m88nPMUOBhOLGivx0JqwxqH2ZiQSjXFsPreu40wE0Cyw6GAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2541,
+      "completion_tokens": 331,
+      "total_tokens": 2872,
+      "cost": 0.0004196,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004196,
+        "upstream_inference_prompt_cost": 0.0002541,
+        "upstream_inference_completions_cost": 0.0001655
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 149,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.0004196,
+  "seconds": 1.97583954106085
+}

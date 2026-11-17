@@ -1,0 +1,70 @@
+{
+  "request_id": "d40c9d4006904773b49b802626ded8a5",
+  "response": {
+    "id": "gen-1795335881-wo9uDjkuzfj2lBHJMTzi",
+    "object": "chat.completion",
+    "created": 1795335881,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI found one email from Chenwei last week matching that subject. Let me forward it to Carlos now.\n\n",
+          "refusal": null,
+          "reasoning": "I found Carlos's email address: carlos.rodriguez@atlas.com\nAnd I found one email from chenwei about the workshop from last week:\n- email_id: 00000337\n- subject: \"Update on Supply Chain Enhancement Workshop\"\n- sent: 2023-11-23\n\nLet me forward this email to carlos.\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "chatcmpl-tool-b06b6ab0cc00c7c0",
+              "function": {
+                "name": "email__forward_email",
+                "arguments": "{\"email_id\": \"00000337\", \"recipient\": \"carlos.rodriguez@atlas.com\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I found Carlos's email address: carlos.rodriguez@atlas.com\nAnd I found one email from chenwei about the workshop from last week:\n- email_id: 00000337\n- subject: \"Update on Supply Chain Enhancement Workshop\"\n- sent: 2023-11-23\n\nLet me forward this email to carlos.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2171,
+      "completion_tokens": 163,
+      "total_tokens": 2334,
+      "cost": 0.000454875,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1568,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000454875,
+        "upstream_inference_prompt_cost": 0.00014925,
+        "upstream_inference_completions_cost": 0.000305625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 69,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.000454875,
+  "seconds": 3.694053541868925
+}

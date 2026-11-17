@@ -1,0 +1,71 @@
+{
+  "request_id": "451880307c474492b8840618c50007c8",
+  "response": {
+    "id": "gen-1795335886-udYzNUOk6nsJTlxs1xyv",
+    "object": "chat.completion",
+    "created": 1795335886,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": "I'll start by searching for emails from Fatima to find the most recent one.",
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_013qEEsWoUkpAXpeTWpj93qH",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"fatima\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "toolu_vrtx_01N1smRYKLETwK3cEPWN5piK",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"kofi\"}"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2511,
+      "completion_tokens": 129,
+      "total_tokens": 2640,
+      "cost": 0.0003156,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003156,
+        "upstream_inference_prompt_cost": 0.0002511,
+        "upstream_inference_completions_cost": 6.45e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.0003156,
+  "seconds": 0.9074747499544173
+}

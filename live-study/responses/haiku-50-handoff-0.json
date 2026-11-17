@@ -1,0 +1,80 @@
+{
+  "request_id": "2d8c2833524949ed88b682108fcd9689",
+  "response": {
+    "id": "gen-1795335947-D7bDhoJkxOhxdom7QLSq",
+    "object": "chat.completion",
+    "created": 1795335947,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_use",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "I need to look up the email first, and I also need to find Olga's address. Neither depends on the other, so I can run both at once.\n\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "toolu_vrtx_01RMRrJyEGrx5F5gyZkYr264",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"Task Update on Add authentication for email notification\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "toolu_vrtx_016ryXB4JJWsDwUujyyzWdfv",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"olga\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "I need to look up the email first, and I also need to find Olga's address. Neither depends on the other, so I can run both at once.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "CAQS3QQKEggUEAIYAjgBQgh0aGlua2luZxIMgoGqaCKKNKPYwKDQGgwbLjIfB3wNkaxn57UiMHz2WSTjcKrONgc51fJPX9tJXMd8AG+tqbyC3pWlX3fHga8wI9+nJcHZo1ERDasWWSr4A7Zke/LMVwj5tILqpaFsxcTuc8k9WNAfsTIS8m+eAF8prr1S1Q16blsP0Ev3JajAFNI0o0pG+eKxNtOnix4ZUJmSg6tFCtHQ/QES29yL7B4a2cD72JSLIbf+f/w88ztIr0hgZSmji0viouHUp0AIibRzRPAJKf5pI0Bx6aO0Cqbzuma2VrLc7YVZOXndkljetFfmnxUqq4Y+cOa3k5p3lFOebTtAMzIlJlLegLUCkKFEPiIduDHyLVTaMEqEwKpB/JzChq6Uam8hg/LDgrZaWb046NSp7uOAq0XDHmUWfv7+QTZ+hhBwp/2r8mpiNE7haW2cxiXeeWPHUZqGy6utQfl19cUs79F4Q+CTi19Sa6564cxXpJn81yNeAzU2mkUED8Gq9NKxpG+eXaOcau7OLbLFL+fWRevrP1sZlZ3z/4RCw+oQvc2Ba1EhR2sSRL/E+CAaw0/H7qwflfPWsN5iTMqPj2KTzGPQaDiOmf/9UwPFRHp1o4CRo3MI0x37Y+Jy2ns8oSZXEpSPkkTS4G7jPZsWufFXqJVgoPB5FM6IFp8pfIs3FTGPmDICpuGtbpJIplJKY+Nh6R9f0phx/+IU8+md2AJBOBKXEr6HFCNKV0Pmz18fVo0qNAK/MEr/jhCGUclDICx34pHfVGzujLnTs1bxYUW8BkajfBgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Z29vZ2xlLXZlcnRleC9nbG9iYWwifQ"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2523,
+      "completion_tokens": 147,
+      "total_tokens": 2670,
+      "cost": 0.0003258,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003258,
+        "upstream_inference_prompt_cost": 0.0002523,
+        "upstream_inference_completions_cost": 7.35e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 31,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.0003258,
+  "seconds": 1.488218457903713
+}

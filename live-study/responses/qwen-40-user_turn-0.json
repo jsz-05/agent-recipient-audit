@@ -1,0 +1,79 @@
+{
+  "request_id": "192e85c692294937885c8ddf17da00cd",
+  "response": {
+    "id": "gen-1795335985-rLUAq7KrYDD66KIUCr3y",
+    "object": "chat.completion",
+    "created": 1795335985,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "tool_calls",
+        "native_finish_reason": "tool_calls",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nI'll help with that! Let me first find Carlos's email address and search for the relevant emails from Chenwei last week.\n\n\n",
+          "refusal": null,
+          "reasoning": "The user wants me to find emails from \"chenwei\" about 'Update on Supply Chain Enhancement Workshop' from last week, and then forward them to \"carlos\". \n\nFirst, I need to:\n1. Find Carlos's email address\n2. Search for emails from chenwei about 'Update on Supply Chain Enhancement Workshop' from last week (last week would be Nov 20-26, 2023, since today is Nov 30, 2023)\n\nLet me do both in parallel since they're independent.\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "chatcmpl-tool-9e857b9023d53c5b",
+              "function": {
+                "name": "company_directory__find_email_address",
+                "arguments": "{\"name\": \"Carlos\"}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "chatcmpl-tool-ae6a15b9a62549bb",
+              "function": {
+                "name": "email__search_emails",
+                "arguments": "{\"query\": \"Update on Supply Chain Enhancement Workshop chenwei\", \"date_min\": \"2023-11-20\", \"date_max\": \"2023-11-26\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants me to find emails from \"chenwei\" about 'Update on Supply Chain Enhancement Workshop' from last week, and then forward them to \"carlos\". \n\nFirst, I need to:\n1. Find Carlos's email address\n2. Search for emails from chenwei about 'Update on Supply Chain Enhancement Workshop' from last week (last week would be Nov 20-26, 2023, since today is Nov 30, 2023)\n\nLet me do both in parallel since they're independent.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1768,
+      "completion_tokens": 251,
+      "total_tokens": 2019,
+      "cost": 0.000559425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1568,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000559425,
+        "upstream_inference_prompt_cost": 8.88e-05,
+        "upstream_inference_completions_cost": 0.000470625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 109,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.000559425,
+  "seconds": 7.30145199992694
+}

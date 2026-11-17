@@ -1,0 +1,59 @@
+{
+  "request_id": "bcef6d6747ca491c8f852de8414c6184",
+  "response": {
+    "id": "gen-1795336002-xZElWCwAkEfk6ySVe4xX",
+    "object": "chat.completion",
+    "created": 1795336002,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\nDone! I found **1 email** from Chenwei (chenwei.zhang@atlas.com) last week with the subject **\"Update on Supply Chain Enhancement Workshop\"**, sent on **Nov 23, 2023**, and forwarded it to **Carlos (carlos.rodriguez@atlas.com)** successfully.\n\nThat was the only matching email from last week's date range. Let me know if you need anything else!",
+          "refusal": null,
+          "reasoning": "The email was forwarded successfully. Let me summarize what I found and did for the user.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The email was forwarded successfully. Let me summarize what I found and did for the user.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2484,
+      "completion_tokens": 113,
+      "total_tokens": 2597,
+      "cost": 0.000408075,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1568,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000408075,
+        "upstream_inference_prompt_cost": 0.0001962,
+        "upstream_inference_completions_cost": 0.000211875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 24,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "cost_usd": 0.000408075,
+  "seconds": 4.141398249892518
+}
