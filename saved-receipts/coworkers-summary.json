@@ -1,0 +1,24 @@
+{
+  "alternatives_per_error": {
+    "18": 60,
+    "19": 103
+  },
+  "combined": {
+    "different": 73,
+    "insufficient": 2964
+  },
+  "observed_errors": 163,
+  "placements": 3037,
+  "receipt": {
+    "different": 3037
+  },
+  "roster_rejections": 0,
+  "trace": {
+    "different": 73,
+    "insufficient": 2964
+  },
+  "trace_per_error": {
+    "different": 4,
+    "insufficient": 159
+  }
+}
