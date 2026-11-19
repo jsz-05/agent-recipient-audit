@@ -1,0 +1,320 @@
+{
+  "analysis": "Post-hoc descriptive reaggregation of saved records; no independent sample or population interval.",
+  "estimand": "Average successful-history detection first over eligible donor models within each original error, then across original errors; compare original decisions on the same errors.",
+  "verification_boundary": "Independently reaggregates saved native-export equalities, checks all 223 against reconstructed alias content, and recomputes raw checker decisions from the original archives. Does not rerun native SDK exports, outbox writes, or the WorkBench full-task evaluator. Its saved full-task correctness labels are checked for consistency within episodes.",
+  "input_sha256": {
+    "external/WorkBench/data/processed/tasks_and_outcomes/email_tasks_and_outcomes.csv": "be57642f3eb74bce2aba8586088e12781aa71eb6b628ba5091db20c0f86c084d",
+    "external/WorkBench/data/raw/email_addresses.csv": "d9227ee1a072e528c3735afea166a56e5d2e88f4c98dc7a0beba035ff0efcc2a",
+    "saved/actions.jsonl": "e9b2b9d4612902e017de18a17f606c00e651bc4ed20c8c6401637e3594b72ad3",
+    "analysis/archive/claude-fable-5_all_2026-06-09_22-15-23.csv.gz": "28a1312c5946de4cb0ee0583ecb66a24baaaf6bf076f74d9b2257db7372b3e96",
+    "analysis/archive/claude-haiku-4.5_all_2026-06-03_18-00-07.csv.gz": "f851c0475e70ecd951bd84df3a2f27e40dffbd601d5a780178c1956338a6f173",
+    "analysis/archive/claude-opus-4.8_all_2026-06-03_14-11-30.csv.gz": "e9bd89d593b98a2cf7479eda0319ec85a72afd30568e220c01611b422e6bdabb",
+    "analysis/archive/claude-sonnet-4.6_all_2026-06-03_13-27-33.csv.gz": "48a2c7480adaa3657df9128ec667e65fd12f850e30eec8dd2be3264ec7eea00c",
+    "analysis/archive/deepseek-v4-pro_all_2026-06-03_18-08-20.csv.gz": "cbaf774b04e7ec17426ed6a402a5b814ba35b8a49c6c6dfa1391abfef1e7257a",
+    "analysis/archive/gemini-3.1-pro_all_2026-06-03_20-51-56.csv.gz": "e64d6c8ea74fa99ff371c8d733df114dea60494c088e61d9febc9a2ce6e88be6",
+    "analysis/archive/gemini-3.5-flash_all_2026-06-03_19-46-17.csv.gz": "3b8a9788cafd8814e5888854c43d8955f9c648f6b18d556adcc2b759343e82c3",
+    "analysis/archive/glm-4.6_all_2026-06-03_21-32-58.csv.gz": "6aeb7e7f2d488481fa9a01fa79fc74536c70b070dbf2e4a8642840d50b935c92",
+    "analysis/archive/gpt-3.5_all_2026-06-04_09-53-16.csv.gz": "9c930cd457e4a85e9b76a09328a2dbf599056b5e0783f799d10466c6ff63acd2",
+    "analysis/archive/gpt-4-turbo_all_2026-06-03_18-36-30.csv.gz": "dc4e458dc99dfde5594cf6a8cc26540085444e77fd7f29c328cb4839d9a97251",
+    "analysis/archive/gpt-4.1_all_2026-06-04_10-10-16.csv.gz": "0820d1395646bd2d384b3e7fcbd28d983976fb852c96c8f3f14432b4b35bb004",
+    "analysis/archive/gpt-4o_all_2026-06-04_09-56-59.csv.gz": "3e63d1b902aec16bb216d80ee9e34c095d5e3907cf09de06b1cc792988f0b8a9",
+    "analysis/archive/gpt-5.1_all_2026-06-04_10-42-28.csv.gz": "ce87c0313800f9c6837dc479d4915687ead3406df62c9738924075431720a808",
+    "analysis/archive/gpt-5.2_all_2026-06-04_10-46-45.csv.gz": "adc1c5c5ad3c8849754bba8869ee50f9323658546d7d568d0a86330c35e6e09d",
+    "analysis/archive/gpt-5.4-mini_all_2026-06-03_17-59-59.csv.gz": "0133cd7d88e089dd7ce88e70e824554956d4427b35b5f3b645a4a61922521269",
+    "analysis/archive/gpt-5.4-nano_all_2026-06-03_18-04-06.csv.gz": "5a23c421a1f50e1d1cfa3faf0dbb00c998f1a7ecfc2cd8272988722b3c074bcf",
+    "analysis/archive/gpt-5.4_all_2026-06-04_10-52-47.csv.gz": "f2ff78645e14af96185521244937213567ccc1b476bec2510132c594e9ed5803",
+    "analysis/archive/gpt-5.5_all_2026-06-03_16-32-20.csv.gz": "cc4147ec6d2d957a4d93aa22fd64013b12c985fc17c095040df75565af01d388",
+    "analysis/archive/gpt-5_all_2026-06-04_10-14-51.csv.gz": "d44f5c998b1d9bd5520c0db20ad7b8d2a7cb82c42e96af38e61c40b9620f4270",
+    "analysis/archive/kimi-k2.6_all_2026-06-03_21-14-29.csv.gz": "a563bb68b93c14b7e3074e7d6e0a30d300980db2bbdbd39c6b710299475e44ee",
+    "analysis/archive/mistral-medium-3-5_all_2026-06-12_13-04-12.csv.gz": "67af419c47ed859eb413617b47e6ce8c647699b268996ae9277ec684ad08862e",
+    "analysis/archive/mistral-small-2603_all_2026-06-12_12-59-38.csv.gz": "4d60c165dc32a979f4a38137befc975b1b37ea97b157c0518700464acd126bdd",
+    "analysis/archive/o3_all_2026-06-04_10-00-17.csv.gz": "dc121814342b00967f55e456cf30b518b30ca813d2d21b1c20802cf721b9ca9e",
+    "analysis/archive/qwen-3.5-flash_all_2026-06-03_17-45-13.csv.gz": "d6678cce8fc334f02d38380a1e5b7e3bf97cd0cbd3c0c2ab2e4a3d09079517ed",
+    "archive-manifest.json": "e100dd3a808bf2d31cc844ee27055a350ad504a5b28132b18f2704867c294c34",
+    "saved/checked-outboxes.jsonl": "7c8c5b8bde58d8a4f01533519e0f38b1755a8806975492a3b91b9fb25c83f7a9",
+    "saved/corrected-exports.jsonl": "e8e450a1504bcf1aec7074e527d7523a91d9df0e6f562f40d26c948698beeb8a",
+    "saved/export-controls.jsonl": "1c5918f225b7939e9c37c81c92166f0756456e8b9aa741cc254e4d342ff7a0be",
+    "saved/permission-resolution.jsonl": "4f7481423332f3f067340879d37b68f0f50863bdfc7a6e05eb9529388493e860",
+    "saved/runs.jsonl": "c895ac9c46da4bf9fb08eb28f02fd157531bf6952300455dfbfa6146b3213f34",
+    "saved-comparison/matched-replays.jsonl": "1ad3e2f9d7879de670557a3b22df2bdb69d54b9b3473a218261ac2683efd225b",
+    "saved-comparison/natural-actions.jsonl": "f395ab8a709f53cd707bd9ef713512587a16259ca709a6127b7549be12bb0ba4"
+  },
+  "protocol_sha256": "d8344fdf8774cd4d2eba89289775a87c0e1ecf84138a71ed42f2f20b5f8232ad",
+  "archive": {
+    "episodes": 1200,
+    "archives": 24,
+    "completed_actions": 1409,
+    "permitted_actions": 1246,
+    "errors": 163,
+    "error_episodes": 124,
+    "error_tasks": 43,
+    "error_sources": 13,
+    "wrong_destinations": 39,
+    "wrong_destinations_in_roster": 0,
+    "original_decisions": {
+      "different": 4,
+      "insufficient": 159
+    }
+  },
+  "verification": {
+    "reconstructed_archive_episodes": 1200,
+    "raw_checker_recomputed_original_actions": 1409,
+    "raw_checker_recomputed_replays": 4220,
+    "reconstructed_content_corrections": 223,
+    "saved_native_corrections": 223,
+    "raw_alias_disagreements": 0,
+    "complete_candidate_selection_agreement": true,
+    "both_sdk_correction_agreement": true
+  },
+  "whole_export_equality": {
+    "raw": {
+      "every": 0,
+      "any": 0
+    },
+    "mask": {
+      "every": 161,
+      "any": 161
+    },
+    "tokens": {
+      "every": 94,
+      "any": 101
+    },
+    "canonical": {
+      "every": 94,
+      "any": 101
+    },
+    "grafana_mask": {
+      "every": 161,
+      "any": 161
+    },
+    "grafana_canonical": {
+      "every": 94,
+      "any": 101
+    },
+    "langsmith_hmac_bytes": {
+      "every": 0,
+      "any": 0
+    },
+    "langsmith_hmac_equality": {
+      "every": 94,
+      "any": 101
+    },
+    "langsmith_membership": {
+      "every": 0,
+      "any": 0
+    }
+  },
+  "baseline": {
+    "wrong_actions": 163,
+    "matched_actions": 158,
+    "original_flagged": 4,
+    "original_detection": 0.02531645569620253,
+    "successful_placements": 2865,
+    "successful_flagged": 2845,
+    "equal_error_successful_detection": 0.9932796125334433,
+    "equal_error_difference": 0.9679631568372408,
+    "collisions_every": 94,
+    "collision_rate": 0.5766871165644172
+  },
+  "matched_structure": {
+    "error_tasks": 43,
+    "error_sources": 13,
+    "wrong_destinations": 39,
+    "donor_models": 23,
+    "donor_episodes": 801,
+    "donors_per_error_range": [
+      14,
+      22
+    ],
+    "distinct_unmodified_donor_calls": 816,
+    "unmodified_donor_verdicts": {
+      "permitted": 811,
+      "insufficient": 5
+    },
+    "distinct_modified_donor_calls": 1456,
+    "unique_modified_call_verdicts": {
+      "different": 1445,
+      "insufficient": 11
+    },
+    "unique_modified_call_detection": 0.992445054945055
+  },
+  "excluded_two_largest_error_sources": {
+    "excluded": [
+      "gpt-3.5",
+      "mistral-small-2603"
+    ],
+    "wrong_actions": 86,
+    "matched_actions": 86,
+    "original_flagged": 4,
+    "original_detection": 0.046511627906976744,
+    "successful_placements": 1558,
+    "successful_flagged": 1543,
+    "equal_error_successful_detection": 0.99078121660741,
+    "equal_error_difference": 0.9442695887004333,
+    "collisions_every": 46,
+    "collision_rate": 0.5348837209302325
+  },
+  "balanced_weightings": [
+    {
+      "weighting": "task",
+      "groups_all_errors": 43,
+      "groups_matched_errors": 43,
+      "original_detection": 0.013049095607235143,
+      "successful_detection": 0.9930543412795555,
+      "difference": 0.9800052456723203,
+      "collision_rate": 0.6197674418604651
+    },
+    {
+      "weighting": "template",
+      "groups_all_errors": 5,
+      "groups_matched_errors": 5,
+      "original_detection": 0.016896551724137933,
+      "successful_detection": 0.9964605959342802,
+      "difference": 0.9795640442101422,
+      "collision_rate": 0.5997253725196005
+    },
+    {
+      "weighting": "source_model",
+      "groups_all_errors": 13,
+      "groups_matched_errors": 13,
+      "original_detection": 0.11221719457013575,
+      "successful_detection": 0.9919352391352826,
+      "difference": 0.8797180445651468,
+      "collision_rate": 0.5605860203145271
+    },
+    {
+      "weighting": "episode",
+      "groups_all_errors": 124,
+      "groups_matched_errors": 122,
+      "original_detection": 0.02459016393442623,
+      "successful_detection": 0.9944362271799718,
+      "difference": 0.9698460632455456,
+      "collision_rate": 0.6048387096774194
+    },
+    {
+      "weighting": "destination",
+      "groups_all_errors": 39,
+      "groups_matched_errors": 39,
+      "original_detection": 0.04212454212454212,
+      "successful_detection": 0.9934234868445395,
+      "difference": 0.9512989447199973,
+      "collision_rate": 0.6127372627372627
+    }
+  ],
+  "leave_one_group_out_ranges": {
+    "task": {
+      "equal_error_difference": {
+        "minimum": 0.9657985052721896,
+        "minimum_removed": "74",
+        "minimum_remaining_errors": 153,
+        "maximum": 0.9830657725394568,
+        "maximum_removed": "70",
+        "maximum_remaining_errors": 153
+      },
+      "equal_error_successful_detection": {
+        "minimum": 0.9928255322992166,
+        "minimum_removed": "74",
+        "minimum_remaining_errors": 153,
+        "maximum": 0.9965792860529703,
+        "maximum_removed": "70",
+        "maximum_remaining_errors": 153
+      },
+      "collision_rate": {
+        "minimum": 0.5490196078431373,
+        "minimum_removed": "74",
+        "minimum_remaining_errors": 153,
+        "maximum": 0.6143790849673203,
+        "maximum_removed": "70",
+        "maximum_remaining_errors": 153
+      }
+    },
+    "template": {
+      "equal_error_difference": {
+        "minimum": 0.9571032100024072,
+        "minimum_removed": "Forward all the emails from {name} last week about '{subject}' to {recipient_name}",
+        "minimum_remaining_errors": 120,
+        "maximum": 0.9897959183673469,
+        "maximum_removed": "Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2}",
+        "maximum_remaining_errors": 103
+      },
+      "equal_error_successful_detection": {
+        "minimum": 0.991001515087153,
+        "minimum_removed": "Forward all the emails from {name} last week about '{subject}' to {recipient_name}",
+        "minimum_remaining_errors": 120,
+        "maximum": 1,
+        "maximum_removed": "Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2}",
+        "maximum_remaining_errors": 103
+      },
+      "collision_rate": {
+        "minimum": 0.5436893203883495,
+        "minimum_removed": "Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2}",
+        "minimum_remaining_errors": 103,
+        "maximum": 0.65,
+        "maximum_removed": "Forward all the emails from {name} last week about '{subject}' to {recipient_name}",
+        "maximum_remaining_errors": 120
+      }
+    },
+    "source_model": {
+      "equal_error_difference": {
+        "minimum": 0.9582567529935951,
+        "minimum_removed": "mistral-small-2603",
+        "minimum_remaining_errors": 124,
+        "maximum": 0.9807143130156546,
+        "maximum_removed": "gpt-5.1",
+        "maximum_remaining_errors": 158
+      },
+      "equal_error_successful_detection": {
+        "minimum": 0.9915900863269285,
+        "minimum_removed": "mistral-small-2603",
+        "minimum_remaining_errors": 124,
+        "maximum": 0.9948585109305703,
+        "maximum_removed": "gpt-4o",
+        "maximum_remaining_errors": 154
+      },
+      "collision_rate": {
+        "minimum": 0.5241935483870968,
+        "minimum_removed": "mistral-small-2603",
+        "minimum_remaining_errors": 124,
+        "maximum": 0.6099290780141844,
+        "maximum_removed": "gpt-5.4-nano",
+        "maximum_remaining_errors": 141
+      }
+    },
+    "destination": {
+      "equal_error_difference": {
+        "minimum": 0.9653299916457811,
+        "minimum_removed": "nadia@example.com",
+        "minimum_remaining_errors": 151,
+        "maximum": 0.9745115476864203,
+        "maximum_removed": "akira@atlas.com",
+        "maximum_remaining_errors": 160
+      },
+      "equal_error_successful_detection": {
+        "minimum": 0.9927272519197538,
+        "minimum_removed": "nadia@example.com",
+        "minimum_remaining_errors": 151,
+        "maximum": 0.994341915394547,
+        "maximum_removed": "yuki@example.com",
+        "maximum_remaining_errors": 159
+      },
+      "collision_rate": {
+        "minimum": 0.5629139072847682,
+        "minimum_removed": "anaya@example.com",
+        "minimum_remaining_errors": 151,
+        "maximum": 0.5949367088607594,
+        "maximum_removed": "nadia@atlas.com",
+        "maximum_remaining_errors": 158
+      }
+    }
+  },
+  "leave_one_donor_out": {
+    "models": 23,
+    "detection_minimum": 0.9929014643832217,
+    "detection_maximum": 0.9966244725738397,
+    "max_errors_losing_all_donors": 0
+  },
+  "all_matched_task_differences_positive": true,
+  "new_model_calls": 0,
+  "new_native_replays": 0,
+  "openrouter_spend_usd": 0
+}

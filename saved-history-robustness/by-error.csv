@@ -1,0 +1,164 @@
+model,task,step,template,destination,source_message,whole_export_collision_every,original_flagged,successful_placements,successful_flagged,successful_detection
+claude-haiku-4.5,69,3,Forward my most recent email from {sender_name} to {recipient_name},raj@example.com,00000206,False,True,18,18,1
+gpt-3.5,40,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},carlos@example.com,00000337,False,False,14,14,1
+gpt-3.5,40,3,Forward all the emails from {name} last week about '{subject}' to {recipient_name},carlos@example.com,00000390,False,False,0,0,
+gpt-3.5,41,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nadia@example.com,00000120,False,False,15,15,1
+gpt-3.5,41,3,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nadia@example.com,00000346,False,False,15,15,1
+gpt-3.5,42,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nia@atlas.com,00000173,False,False,17,17,1
+gpt-3.5,42,3,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nia@atlas.com,00000173,False,False,17,17,1
+gpt-3.5,43,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},chenwei@example.com,00000198,False,False,17,17,1
+gpt-3.5,43,3,Forward all the emails from {name} last week about '{subject}' to {recipient_name},chenwei@example.com,00000198,False,False,17,17,1
+gpt-3.5,44,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},anaya@example.com,00000017,False,False,18,18,1
+gpt-3.5,44,3,Forward all the emails from {name} last week about '{subject}' to {recipient_name},anaya@example.com,00000017,False,False,18,18,1
+gpt-3.5,45,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},amir@example.com,00000281,False,False,16,16,1
+gpt-3.5,45,3,Forward all the emails from {name} last week about '{subject}' to {recipient_name},amir@example.com,00000281,False,False,16,16,1
+gpt-3.5,46,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},amir@example.com,00000264,True,False,17,17,1
+gpt-3.5,47,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},yuki@example.com,00000431,True,False,18,18,1
+gpt-3.5,48,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},kofi@example.com,00000477,False,False,19,19,1
+gpt-3.5,48,3,Forward all the emails from {name} last week about '{subject}' to {recipient_name},kofi@example.com,00000266,False,False,0,0,
+gpt-3.5,49,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},carlos@example.com,00000308,False,False,18,18,1
+gpt-3.5,49,3,Forward all the emails from {name} last week about '{subject}' to {recipient_name},carlos@example.com,00000308,False,False,18,18,1
+gpt-3.5,50,1,Forward the latest email about '{subject}' to {recipient_name},olga@example.com,00000436,True,False,21,21,1
+gpt-3.5,51,1,Forward the latest email about '{subject}' to {recipient_name},santiago@example.com,00000206,True,False,19,19,1
+gpt-3.5,52,1,Forward the latest email about '{subject}' to {recipient_name},amir@example.com,00000409,True,False,20,20,1
+gpt-3.5,53,1,Forward the latest email about '{subject}' to {recipient_name},yuki@example.com,00000428,True,False,22,22,1
+gpt-3.5,57,1,Forward the latest email about '{subject}' to {recipient_name},chenwei@example.com,00000134,False,False,21,21,1
+gpt-3.5,66,2,Forward my most recent email from {sender_name} to {recipient_name},fatima@example.com,00000436,True,False,0,0,
+gpt-3.5,68,2,Forward my most recent email from {sender_name} to {recipient_name},anaya@example.com,00000436,True,False,0,0,
+gpt-3.5,69,1,Forward my most recent email from {sender_name} to {recipient_name},raj@example.com,00000206,True,False,18,18,1
+gpt-3.5,70,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},amir@example.com,00000092,False,False,18,17,0.9444444444444444
+gpt-3.5,70,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},akira@example.com,00000092,False,False,18,17,0.9444444444444444
+gpt-3.5,71,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},carlos@example.com,00000012,True,False,20,20,1
+gpt-3.5,71,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},nadia@example.com,00000012,True,False,20,20,1
+gpt-3.5,73,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},olga@example.com,00000245,True,False,19,18,0.9473684210526315
+gpt-3.5,73,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},kofi@example.com,00000245,True,False,19,18,0.9473684210526315
+gpt-3.5,74,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},lena@example.com,00000262,True,False,17,17,1
+gpt-3.5,74,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},aisha@example.com,00000262,True,False,17,17,1
+gpt-3.5,78,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},raj@example.com,00000308,True,False,19,19,1
+gpt-3.5,78,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},sofia@example.com,00000308,True,False,19,19,1
+gpt-3.5,79,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},anaya@example.com,00000208,True,False,19,19,1
+gpt-3.5,79,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},luis@example.com,00000208,True,False,19,19,1
+gpt-4-turbo,25,0,Send an email to {name} saying '{body}' and title it '{subject}',nadia@example.com,,True,False,18,18,1
+gpt-4-turbo,42,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nia.jones@atlas.com,00000173,True,False,17,17,1
+gpt-4-turbo,64,1,Forward my most recent email from {sender_name} to {recipient_name},chenwei@example.com,00000204,True,False,17,17,1
+gpt-4-turbo,70,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},amir@example.com,00000092,False,False,18,17,0.9444444444444444
+gpt-4-turbo,70,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},akira@example.com,00000092,False,False,18,17,0.9444444444444444
+gpt-4-turbo,77,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},nadia@example.com,00000409,True,False,17,17,1
+gpt-4-turbo,77,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},jinsoo@example.com,00000409,True,False,17,17,1
+gpt-4-turbo,79,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},anaya@example.com,00000208,True,False,19,19,1
+gpt-4-turbo,79,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},luis@example.com,00000208,True,False,19,19,1
+gpt-4o,71,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},carlos@example.com,00000012,True,False,20,20,1
+gpt-4o,71,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},nadia@example.com,00000012,True,False,20,20,1
+gpt-4o,72,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},yuki@example.com,00000412,False,False,21,17,0.8095238095238095
+gpt-4o,73,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},olga@example.com,00000245,False,False,19,18,0.9473684210526315
+gpt-4o,73,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},kofi@example.com,00000245,False,False,19,18,0.9473684210526315
+gpt-4o,77,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},nadia@example.com,00000409,True,False,17,17,1
+gpt-4o,77,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},jinsoo@example.com,00000409,True,False,17,17,1
+gpt-4o,79,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},anaya@example.com,00000208,True,False,19,19,1
+gpt-4o,79,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},luis@example.com,00000208,True,False,19,19,1
+gpt-5.1,21,0,Send an email to {name} saying '{body}' and title it '{subject}',jinsoo@example.com,,False,False,20,20,1
+gpt-5.1,42,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nia@atlas.com,00000173,False,False,17,17,1
+gpt-5.1,46,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},amir@atlas.com,00000264,True,False,17,17,1
+gpt-5.1,70,3,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},amir@atlas.com,00000092,False,True,18,17,0.9444444444444444
+gpt-5.1,70,4,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},akira@atlas.com,00000092,False,True,18,17,0.9444444444444444
+gpt-5.2,22,0,Send an email to {name} saying '{body}' and title it '{subject}',dmitri@example.com,,False,False,19,19,1
+gpt-5.2,24,0,Send an email to {name} saying '{body}' and title it '{subject}',lena@example.com,,False,False,19,19,1
+gpt-5.2,28,0,Send an email to {name} saying '{body}' and title it '{subject}',dmitri@example.com,,False,False,20,20,1
+gpt-5.2,70,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},amir@atlas.com,00000092,False,False,18,17,0.9444444444444444
+gpt-5.2,70,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},akira@atlas.com,00000092,False,False,18,17,0.9444444444444444
+gpt-5.4-mini,40,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},carlos@example.com,00000337,True,False,14,14,1
+gpt-5.4-mini,41,3,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nadia@atlas.com,00000120,False,False,15,15,1
+gpt-5.4-mini,41,4,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nadia@atlas.com,00000346,False,False,15,15,1
+gpt-5.4-mini,42,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nia@example.com,00000173,True,False,17,17,1
+gpt-5.4-mini,43,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},chenwei@atlas.com,00000198,False,False,17,17,1
+gpt-5.4-mini,46,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},amir@atlas.com,00000264,True,False,17,17,1
+gpt-5.4-mini,49,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},carlos@example.com,00000308,False,False,18,18,1
+gpt-5.4-mini,51,1,Forward the latest email about '{subject}' to {recipient_name},santiago@atlas.com,00000206,False,False,19,19,1
+gpt-5.4-mini,66,2,Forward my most recent email from {sender_name} to {recipient_name},fatima@example.com,00000052,True,False,18,18,1
+gpt-5.4-mini,68,1,Forward my most recent email from {sender_name} to {recipient_name},anaya@example.com,00000429,True,False,19,19,1
+gpt-5.4-mini,74,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},lena@atlas.com,00000262,True,False,17,17,1
+gpt-5.4-mini,74,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},aisha@atlas.com,00000262,True,False,17,17,1
+gpt-5.4-mini,75,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},akira@example.com,00000120,True,False,19,19,1
+gpt-5.4-mini,75,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},yuki@example.com,00000120,True,False,19,19,1
+gpt-5.4-mini,77,3,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},"nadia.moreau@atlas.com, jinsoo.kim@atlas.com",00000409,False,True,17,17,1
+gpt-5.4-mini,78,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},raj@example.com,00000308,True,False,19,19,1
+gpt-5.4-mini,78,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},sofia@example.com,00000308,True,False,19,19,1
+gpt-5.4-nano,22,0,Send an email to {name} saying '{body}' and title it '{subject}',dmitri@example.com,,True,False,19,19,1
+gpt-5.4-nano,46,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},amir@example.com,00000264,False,False,17,17,1
+gpt-5.4-nano,50,1,Forward the latest email about '{subject}' to {recipient_name},olga@example.com,00000436,False,False,21,21,1
+gpt-5.4-nano,51,1,Forward the latest email about '{subject}' to {recipient_name},santiago@example.com,00000206,False,False,19,19,1
+gpt-5.4-nano,52,1,Forward the latest email about '{subject}' to {recipient_name},amir@example.com,00000409,False,False,20,20,1
+gpt-5.4-nano,61,2,Forward my most recent email from {sender_name} to {recipient_name},jinsoo@example.com,00000259,False,False,19,19,1
+gpt-5.4-nano,62,1,Forward my most recent email from {sender_name} to {recipient_name},olga@example.com,00000166,True,False,19,19,1
+gpt-5.4-nano,63,2,Forward my most recent email from {sender_name} to {recipient_name},anaya@example.com,00000052,False,False,19,19,1
+gpt-5.4-nano,64,2,Forward my most recent email from {sender_name} to {recipient_name},chenwei@example.com,00000204,False,False,17,17,1
+gpt-5.4-nano,65,2,Forward my most recent email from {sender_name} to {recipient_name},nia@example.com,00000259,False,False,19,19,1
+gpt-5.4-nano,66,1,Forward my most recent email from {sender_name} to {recipient_name},fatima@example.com,00000052,True,False,18,18,1
+gpt-5.4-nano,67,1,Forward my most recent email from {sender_name} to {recipient_name},dmitri@example.com,00000438,False,False,18,18,1
+gpt-5.4-nano,68,1,Forward my most recent email from {sender_name} to {recipient_name},anaya@example.com,00000429,True,False,19,19,1
+gpt-5.4-nano,70,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},amir@example.com,00000092,False,False,18,17,0.9444444444444444
+gpt-5.4-nano,70,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},akira@example.com,00000092,False,False,18,17,0.9444444444444444
+gpt-5.4-nano,71,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},carlos@example.com,00000012,False,False,20,20,1
+gpt-5.4-nano,71,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},nadia@example.com,00000012,False,False,20,20,1
+gpt-5.4-nano,73,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},kofi@example.com,00000245,False,False,19,18,0.9473684210526315
+gpt-5.4-nano,74,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},lena@example.com,00000262,True,False,17,17,1
+gpt-5.4-nano,74,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},aisha@example.com,00000262,True,False,17,17,1
+gpt-5.4-nano,77,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},nadia@example.com,00000409,True,False,17,17,1
+gpt-5.4-nano,77,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},jinsoo@example.com,00000409,True,False,17,17,1
+gpt-5.5,24,0,Send an email to {name} saying '{body}' and title it '{subject}',lena@example.com,,True,False,19,19,1
+mistral-medium-3-5,74,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},lena@example.com,00000262,True,False,17,17,1
+mistral-medium-3-5,74,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},aisha@example.com,00000262,True,False,17,17,1
+mistral-small-2603,20,0,Send an email to {name} saying '{body}' and title it '{subject}',kofi@example.com,,True,False,20,20,1
+mistral-small-2603,21,0,Send an email to {name} saying '{body}' and title it '{subject}',jinsoo@example.com,,True,False,20,20,1
+mistral-small-2603,22,0,Send an email to {name} saying '{body}' and title it '{subject}',dmitri@example.com,,True,False,19,19,1
+mistral-small-2603,24,0,Send an email to {name} saying '{body}' and title it '{subject}',lena@example.com,,True,False,19,19,1
+mistral-small-2603,25,0,Send an email to {name} saying '{body}' and title it '{subject}',nadia@example.com,,True,False,18,18,1
+mistral-small-2603,26,0,Send an email to {name} saying '{body}' and title it '{subject}',amir@example.com,,True,False,18,18,1
+mistral-small-2603,27,0,Send an email to {name} saying '{body}' and title it '{subject}',aisha@example.com,,True,False,20,20,1
+mistral-small-2603,28,0,Send an email to {name} saying '{body}' and title it '{subject}',dmitri@example.com,,True,False,20,20,1
+mistral-small-2603,40,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},carlos@atlas.com,00000390,False,False,0,0,
+mistral-small-2603,40,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},carlos@atlas.com,00000337,False,False,14,14,1
+mistral-small-2603,41,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nadia@atlas.com,00000120,False,False,15,15,1
+mistral-small-2603,41,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nadia@atlas.com,00000346,False,False,15,15,1
+mistral-small-2603,42,2,Forward all the emails from {name} last week about '{subject}' to {recipient_name},nia@atlas.com,00000173,True,False,17,17,1
+mistral-small-2603,43,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},chenwei.zhou@atlas.com,00000198,True,False,17,17,1
+mistral-small-2603,44,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},anaya@example.com,00000017,True,False,18,18,1
+mistral-small-2603,45,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},amir.shaheen@atlas.com,00000281,True,False,16,16,1
+mistral-small-2603,47,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},yuki.lee@atlas.com,00000431,True,False,18,18,1
+mistral-small-2603,48,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},kofi.owusu@atlas.com,00000477,True,False,19,19,1
+mistral-small-2603,49,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},carlos@example.com,00000308,True,False,18,18,1
+mistral-small-2603,51,1,Forward the latest email about '{subject}' to {recipient_name},santiago@atlas.com,00000206,True,False,19,19,1
+mistral-small-2603,52,1,Forward the latest email about '{subject}' to {recipient_name},amir@atlas.com,00000409,True,False,20,20,1
+mistral-small-2603,57,1,Forward the latest email about '{subject}' to {recipient_name},chenwei@example.com,00000134,True,False,21,21,1
+mistral-small-2603,61,1,Forward my most recent email from {sender_name} to {recipient_name},jinsoo.park@atlas.com,00000259,True,False,19,19,1
+mistral-small-2603,62,2,Forward my most recent email from {sender_name} to {recipient_name},olga@example.com,00000166,True,False,19,19,1
+mistral-small-2603,63,1,Forward my most recent email from {sender_name} to {recipient_name},anaya@example.com,00000052,True,False,19,19,1
+mistral-small-2603,64,1,Forward my most recent email from {sender_name} to {recipient_name},chenwei@atlas.com,00000204,True,False,17,17,1
+mistral-small-2603,65,1,Forward my most recent email from {sender_name} to {recipient_name},nia@atlas.com,00000259,True,False,19,19,1
+mistral-small-2603,67,2,Forward my most recent email from {sender_name} to {recipient_name},dmitri@example.com,00000438,True,False,18,18,1
+mistral-small-2603,68,2,Forward my most recent email from {sender_name} to {recipient_name},anaya@atlas.com,00000429,True,False,19,19,1
+mistral-small-2603,69,2,Forward my most recent email from {sender_name} to {recipient_name},raj@example.com,00000206,False,False,18,18,1
+mistral-small-2603,73,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},"olga.petrova@atlas.com, kofi.amankwah@atlas.com",00000245,False,False,19,18,0.9473684210526315
+mistral-small-2603,74,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},lena@atlas.com,00000262,True,False,17,17,1
+mistral-small-2603,74,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},aisha@atlas.com,00000262,True,False,17,17,1
+mistral-small-2603,75,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},akira@atlas.com,00000120,True,False,19,19,1
+mistral-small-2603,75,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},yuki@atlas.com,00000120,True,False,19,19,1
+mistral-small-2603,77,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},nadia@atlas.com,00000409,False,False,17,17,1
+mistral-small-2603,77,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},jinsoo@atlas.com,00000409,False,False,17,17,1
+mistral-small-2603,78,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},raj@example.com,00000308,False,False,19,19,1
+mistral-small-2603,78,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},sofia@example.com,00000308,False,False,19,19,1
+o3,25,0,Send an email to {name} saying '{body}' and title it '{subject}',nadia@example.com,,True,False,18,18,1
+o3,29,0,Send an email to {name} saying '{body}' and title it '{subject}',kofi@example.com,,True,False,21,21,1
+o3,40,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},carlos@example.com,00000337,True,False,14,14,1
+o3,45,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},amir@example.com,00000281,True,False,16,16,1
+o3,46,1,Forward all the emails from {name} last week about '{subject}' to {recipient_name},amir@atlas.com,00000264,False,False,17,17,1
+o3,64,1,Forward my most recent email from {sender_name} to {recipient_name},chenwei@example.com,00000204,True,False,17,17,1
+qwen-3.5-flash,61,1,Forward my most recent email from {sender_name} to {recipient_name},jinsoo@example.com,00000259,False,False,19,19,1
+qwen-3.5-flash,63,1,Forward my most recent email from {sender_name} to {recipient_name},anaya@example.com,00000052,True,False,19,19,1
+qwen-3.5-flash,64,1,Forward my most recent email from {sender_name} to {recipient_name},chenwei@example.com,00000204,True,False,17,17,1
+qwen-3.5-flash,65,1,Forward my most recent email from {sender_name} to {recipient_name},nia@example.com,00000259,False,False,19,19,1
+qwen-3.5-flash,66,1,Forward my most recent email from {sender_name} to {recipient_name},fatima@example.com,00000052,False,False,18,18,1
+qwen-3.5-flash,67,1,Forward my most recent email from {sender_name} to {recipient_name},dmitri@example.com,00000438,False,False,18,18,1
+qwen-3.5-flash,69,1,Forward my most recent email from {sender_name} to {recipient_name},raj@example.com,00000206,True,False,18,18,1
+qwen-3.5-flash,76,1,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},lena@example.com,00000308,True,False,19,19,1
+qwen-3.5-flash,76,2,Forward the last email about '{subject}' to {recipient_name1} and {recipient_name2},nadia@example.com,00000308,True,False,19,19,1
