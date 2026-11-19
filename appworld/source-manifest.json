@@ -1,0 +1,312 @@
+{
+  "leaderboard_commit": "e903f4aa1c0d34856219a042cb7990b556410373",
+  "official_task_data_url": "https://s3.us-west-2.amazonaws.com/appworld.dev/data-0.1.0.bundle",
+  "task_data_sha256": "fd9f9608c2ec71ed0ac25c3633a738b9129a318a129e31230425b9188e508250",
+  "baseline_bundles": [
+    {
+      "path": "experiments/outputs/full_code_refl_deepseekcoder_test_challenge/leaderboard.bundle",
+      "name": "full_code_refl_deepseekcoder_test_challenge",
+      "sha256": "180c340e8be53aa2aa77062bd9dc519256e338fa48284387b07114c30676985c",
+      "size": 4554062,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/full_code_refl_deepseekcoder_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/full_code_refl_deepseekcoder_test_normal/leaderboard.bundle",
+      "name": "full_code_refl_deepseekcoder_test_normal",
+      "sha256": "9e5e2bd4d66b9f093e2b169c4ba504e60e973973dde463793bf79703e2d52cbe",
+      "size": 1988991,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/full_code_refl_deepseekcoder_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/full_code_refl_gpt4o_test_challenge/leaderboard.bundle",
+      "name": "full_code_refl_gpt4o_test_challenge",
+      "sha256": "08748f21dc736b11934b483aa241c67c09fade31bb77c40bfc39868ff88f63d5",
+      "size": 4510649,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/full_code_refl_gpt4o_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/full_code_refl_gpt4o_test_normal/leaderboard.bundle",
+      "name": "full_code_refl_gpt4o_test_normal",
+      "sha256": "f152883a9bcd32ab9b22b0135651ef7c9d8723b28e921aea5bba160ea4ad89d8",
+      "size": 1888785,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/full_code_refl_gpt4o_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/full_code_refl_gpt4turbo_test_challenge/leaderboard.bundle",
+      "name": "full_code_refl_gpt4turbo_test_challenge",
+      "sha256": "77178f68780ba891f0691e7753cacf8bda5cbeef0243107a6dea9c050ccefb56",
+      "size": 4971991,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/full_code_refl_gpt4turbo_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/full_code_refl_gpt4turbo_test_normal/leaderboard.bundle",
+      "name": "full_code_refl_gpt4turbo_test_normal",
+      "sha256": "e1ef5ca20cea42271e17f925a0be565ba069b0155a2895ff3adfabbb3d185ec2",
+      "size": 1885843,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/full_code_refl_gpt4turbo_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/full_code_refl_llama3_test_challenge/leaderboard.bundle",
+      "name": "full_code_refl_llama3_test_challenge",
+      "sha256": "e4031ab979a0953a0c220ad10a5186d0d4c968bb59429b4ee6208f71c50bef41",
+      "size": 4451475,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/full_code_refl_llama3_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/full_code_refl_llama3_test_normal/leaderboard.bundle",
+      "name": "full_code_refl_llama3_test_normal",
+      "sha256": "b4388877bf9d467a1a9e4638ae5be3f8b765819a448635306170df320d6268ed",
+      "size": 1917749,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/full_code_refl_llama3_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/ipfuncall_gpt4o_test_challenge/leaderboard.bundle",
+      "name": "ipfuncall_gpt4o_test_challenge",
+      "sha256": "f78e5117e42ab1e5458fc93c072ecf521f672279df623e1ff0b7d90c142f2ec7",
+      "size": 4928429,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/ipfuncall_gpt4o_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/ipfuncall_gpt4o_test_normal/leaderboard.bundle",
+      "name": "ipfuncall_gpt4o_test_normal",
+      "sha256": "94d26e86565eead022ec93cdf49f8a264f921fd2af10249a3fcd2e82fdd2933e",
+      "size": 2126151,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/ipfuncall_gpt4o_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/ipfuncall_gpt4turbo_test_challenge/leaderboard.bundle",
+      "name": "ipfuncall_gpt4turbo_test_challenge",
+      "sha256": "be86dab11a735c9715202797db28f55a28961d0bdca8fa00cf72b301da733f7b",
+      "size": 4854393,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/ipfuncall_gpt4turbo_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/ipfuncall_gpt4turbo_test_normal/leaderboard.bundle",
+      "name": "ipfuncall_gpt4turbo_test_normal",
+      "sha256": "fc31e0411a086bcbec5826931fff5f2168d01627973df3115532ea1f7768a6e2",
+      "size": 2078960,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/ipfuncall_gpt4turbo_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/plan_exec_deepseekcoder_test_challenge/leaderboard.bundle",
+      "name": "plan_exec_deepseekcoder_test_challenge",
+      "sha256": "0fc66f611572f096c6260e9b65ed976320e003bcb330a00679760fe6be303d05",
+      "size": 5382927,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/plan_exec_deepseekcoder_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/plan_exec_deepseekcoder_test_normal/leaderboard.bundle",
+      "name": "plan_exec_deepseekcoder_test_normal",
+      "sha256": "eb1d58cef3ef53a9cd362788f83c0c0181bcf8ca9296e6444056329354ea7ca6",
+      "size": 2221925,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/plan_exec_deepseekcoder_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/plan_exec_gpt4o_test_challenge/leaderboard.bundle",
+      "name": "plan_exec_gpt4o_test_challenge",
+      "sha256": "dabb1cf6a827de40fb2729d9edff16e7fcb390a2c16dcfc792d9be6fe12380d4",
+      "size": 25780779,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/plan_exec_gpt4o_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/plan_exec_gpt4o_test_normal/leaderboard.bundle",
+      "name": "plan_exec_gpt4o_test_normal",
+      "sha256": "1be71f4359554186c803ceb3967a2311446ff3af724d9bbef6992361c75abe66",
+      "size": 3222456,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/plan_exec_gpt4o_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/plan_exec_gpt4turbo_test_challenge/leaderboard.bundle",
+      "name": "plan_exec_gpt4turbo_test_challenge",
+      "sha256": "da2765bacfb3adc9961dddd1699273ba334255ea9a43c707f53aa324db37d96c",
+      "size": 6742371,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/plan_exec_gpt4turbo_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/plan_exec_gpt4turbo_test_normal/leaderboard.bundle",
+      "name": "plan_exec_gpt4turbo_test_normal",
+      "sha256": "30d34737650a27f8bf1b886ffe7afa571ca04679bd45e66da22554289e5eb0ec",
+      "size": 2439421,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/plan_exec_gpt4turbo_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/plan_exec_llama3_test_challenge/leaderboard.bundle",
+      "name": "plan_exec_llama3_test_challenge",
+      "sha256": "1c1628f32c69c521d306a1f58d8d372609eb3bcf01754199307834a377ecd80f",
+      "size": 20213518,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/plan_exec_llama3_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/plan_exec_llama3_test_normal/leaderboard.bundle",
+      "name": "plan_exec_llama3_test_normal",
+      "sha256": "de1825330662909291c12d7e506e85db9a06534cb2337f1e41e1638df4afaeae",
+      "size": 6237757,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/plan_exec_llama3_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/react_deepseekcoder_test_challenge/leaderboard.bundle",
+      "name": "react_deepseekcoder_test_challenge",
+      "sha256": "214cb730290cfae88b4852b69585efe8e63674693bc0160966cb874cb4ed08d0",
+      "size": 5261723,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/react_deepseekcoder_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/react_deepseekcoder_test_normal/leaderboard.bundle",
+      "name": "react_deepseekcoder_test_normal",
+      "sha256": "cdde1d54ff1751e2c11f2a325422628121c9c156e01e8e3951fd611d78ce5b70",
+      "size": 2198165,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/react_deepseekcoder_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/react_gpt4o_test_challenge/leaderboard.bundle",
+      "name": "react_gpt4o_test_challenge",
+      "sha256": "e6facbb585caffa84e61c50198e39ac696ab4d1f662639748fd9d0fc3d9433a9",
+      "size": 21500032,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/react_gpt4o_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/react_gpt4o_test_normal/leaderboard.bundle",
+      "name": "react_gpt4o_test_normal",
+      "sha256": "8f545ab70570b03658181c7667f301b1739c6459571a5d806968d5a9f01ac69f",
+      "size": 3471377,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/react_gpt4o_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/react_gpt4turbo_test_challenge/leaderboard.bundle",
+      "name": "react_gpt4turbo_test_challenge",
+      "sha256": "e38b82d4a971347b61b03c4bef3fa6d2b08fcc3d440a41f0fdaf35b31a0c2adc",
+      "size": 7121209,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/react_gpt4turbo_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/react_gpt4turbo_test_normal/leaderboard.bundle",
+      "name": "react_gpt4turbo_test_normal",
+      "sha256": "3a27e2f78cf20985682d9693dac62bcdea5b9502c5d0a8a887439d532b23b993",
+      "size": 2379619,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/react_gpt4turbo_test_normal/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/react_llama3_test_challenge/leaderboard.bundle",
+      "name": "react_llama3_test_challenge",
+      "sha256": "adc5d1d8ea069c899990d65867b64de8925c0f89d8cd7c1dd9e269ae1ccaca60",
+      "size": 6638430,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/react_llama3_test_challenge/leaderboard.bundle"
+    },
+    {
+      "path": "experiments/outputs/react_llama3_test_normal/leaderboard.bundle",
+      "name": "react_llama3_test_normal",
+      "sha256": "9b29856cf545e2e0f5275c5736b40a270472b036298ee77e63bd5cb7608cea9c",
+      "size": 2418057,
+      "url": "https://media.githubusercontent.com/media/StonyBrookNLP/appworld-leaderboard/e903f4aa1c0d34856219a042cb7990b556410373/experiments/outputs/react_llama3_test_normal/leaderboard.bundle"
+    }
+  ],
+  "task_ids": [
+    "36705ae_1",
+    "36705ae_2",
+    "36705ae_3",
+    "4441ee9_1",
+    "4441ee9_2",
+    "4441ee9_3",
+    "98d2608_1",
+    "98d2608_2",
+    "98d2608_3",
+    "a1d3dfd_1",
+    "a1d3dfd_2",
+    "a1d3dfd_3",
+    "b71318e_1",
+    "b71318e_2",
+    "b71318e_3",
+    "baeb104_1",
+    "baeb104_2",
+    "baeb104_3",
+    "bcb9696_1",
+    "bcb9696_2",
+    "bcb9696_3",
+    "f6f2e67_1",
+    "f6f2e67_2",
+    "f6f2e67_3",
+    "fdc4b74_1",
+    "fdc4b74_2",
+    "fdc4b74_3",
+    "fddb6b6_1",
+    "fddb6b6_2",
+    "fddb6b6_3"
+  ],
+  "resolver_sha256": "d3de16a570728faec77adff02adf11ce30da7d3c49e317413ee9af8bb77a8967",
+  "eligible_email_tasks": 78,
+  "conservative_eligible_tasks": 66,
+  "selection": "Frozen post-hoc pilot cohort of 30 supported relationship tasks; all 14 original configurations included.",
+  "public_constants": {
+    "url": "https://api.github.com/repos/StonyBrookNLP/appworld/git/blobs/09770a60ef71ef558e9f5bd019b7c4e015d3aae0",
+    "sha256": "776a1c2a97e8f3d7cbda00523be3fdf38ed6165d61ac729a82290a843524138d",
+    "encoding": "github_blob_base64"
+  },
+  "screened_task_ids": [
+    "143527e_1",
+    "143527e_2",
+    "143527e_3",
+    "1b988ac_1",
+    "1b988ac_2",
+    "1b988ac_3",
+    "36705ae_1",
+    "36705ae_2",
+    "36705ae_3",
+    "4441ee9_1",
+    "4441ee9_2",
+    "4441ee9_3",
+    "4ac4a8d_1",
+    "4ac4a8d_2",
+    "4ac4a8d_3",
+    "8f79e35_1",
+    "8f79e35_2",
+    "8f79e35_3",
+    "906f2c7_1",
+    "906f2c7_2",
+    "906f2c7_3",
+    "96bf160_1",
+    "96bf160_2",
+    "96bf160_3",
+    "98d2608_1",
+    "98d2608_2",
+    "98d2608_3",
+    "a132254_1",
+    "a132254_2",
+    "a132254_3",
+    "a1d3dfd_1",
+    "a1d3dfd_2",
+    "a1d3dfd_3",
+    "a53a8fd_1",
+    "a53a8fd_2",
+    "a53a8fd_3",
+    "a7179fa_1",
+    "a7179fa_2",
+    "a7179fa_3",
+    "b71318e_1",
+    "b71318e_2",
+    "b71318e_3",
+    "baeb104_1",
+    "baeb104_2",
+    "baeb104_3",
+    "bcb9696_1",
+    "bcb9696_2",
+    "bcb9696_3",
+    "d6d8cb6_1",
+    "d6d8cb6_2",
+    "d6d8cb6_3",
+    "f6f2e67_1",
+    "f6f2e67_2",
+    "f6f2e67_3",
+    "f86d850_1",
+    "f86d850_2",
+    "f86d850_3",
+    "fdc4b74_1",
+    "fdc4b74_2",
+    "fdc4b74_3",
+    "fddb6b6_1",
+    "fddb6b6_2",
+    "fddb6b6_3",
+    "ffea2b5_1",
+    "ffea2b5_2",
+    "ffea2b5_3"
+  ]
+}

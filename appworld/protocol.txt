@@ -1,0 +1,37 @@
+AppWorld relationship-check validation, 22 November 2026
+
+This is a post-hoc extension of the older-archive pilot, not a new held-out study.
+The frozen resolver and 30 task IDs were chosen before this validation run.
+No 2026 runs enter the manuscript experiment.
+The original cohort was selected after exploratory screens of both older and
+newer archives because it contained usable saved-contact mistakes. The analysis
+does not estimate their prevalence in current models.
+
+Claim: for the supported role-based requests, an independently resolved
+permission set can identify real wrong-recipient sends that personal-contact
+membership cannot flag. The experiment does not transfer the WorkBench history
+contrast or measure prevention.
+
+Controls and checks:
+* Reconstruct every selected task/configuration from original final SQL state,
+  including executions without sends. Do not rely on saved pilot verdicts.
+* Validate initial-state prefixes and the task-owner sender. Match every scored
+  message to the earlier extraction independently, by immutable message ID.
+* The resolver receives only instruction text and original contact data. It
+  never receives ground-truth answers, actual chosen recipients or task IDs.
+* Compute scoring sets separately from original benchmark records, including
+  the independent company-manager relation for the drafted-purchase task.
+* Score all committed sends in the selected tasks, including correct ones.
+  Report no-send executions and unsupported task coverage separately.
+* Count messages, executions and task families separately. Report a first-error
+  per execution sensitivity analysis and exclude the largest repeated-send
+  family as a second sensitivity check.
+* Verify that an opaque receipt of the resolved set and committed destinations
+  preserves the raw check's decision. This is post-hoc serialization, not a
+  deployed receipt adapter or live intervention.
+
+The addition is justified if real non-owner, saved-contact errors remain across
+multiple tasks and executions, independent resolution agrees with the scoring
+records, and the check does not falsely flag recipient-correct sends. Any
+disagreement or false flag must be reported. The study remains retrospective,
+schema-specific and dependent on accurate trusted contact relationships.
