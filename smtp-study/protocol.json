@@ -1,0 +1,439 @@
+{
+  "created_utc": "2026-11-22T08:28:24.574040+00:00",
+  "fixtures": [
+    {
+      "task": 20,
+      "instruction": "I need to send an email to kofi saying 'Hey kofi,\n\nI wanted to let you know that I've completed the tasks for the status briefing. Looking forward to your feedback.\n\nCheers,\n\nSam' and title it 'Task Update on Improve UX of onboarding process'. Can you do that?",
+      "permitted_for_scoring": [
+        "kofi.mensah@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 21,
+      "instruction": "please send an email to jinsoo saying 'Hi jinsoo,\n\nStarting on 'Create wireframe for homepage' today. Any preliminary thoughts or resources you recommend before I dive in?\n\nBest,\n\nSam' and title it 'Task Update on Design logo for website'",
+      "permitted_for_scoring": [
+        "jinsoo.kim@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 22,
+      "instruction": "I need to send an email to dmitri saying 'Hey dmitri,\n\nEncountered a few challenges while working on the Innovation and Creativity Hackathon. Could use your advice.\n\nThanks,\n\nSam' and title it 'Update on performance evaluation'. Can you do that?",
+      "permitted_for_scoring": [
+        "dmitri.ivanov@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 23,
+      "instruction": "I need to send an email to chenwei saying 'chenwei,\n\nI wanted to let you know that I've completed the tasks for the daily stand-up. Looking forward to your feedback.\n\nThanks,\n\nSam' and title it 'Update on daily stand-up'. Can you do that?",
+      "permitted_for_scoring": [
+        "chenwei.zhang@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 24,
+      "instruction": "Send an email to lena saying 'lena,\n\nI've been assigned 'Develop prototype for report generation'. Excited to work on this and confident it will greatly improve our backend efficiency.\n\nCheers,\n\nSam' and title it 'Task Update on Create wireframe for homepage'",
+      "permitted_for_scoring": [
+        "lena.schmidt@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 25,
+      "instruction": "please send an email to nadia saying 'nadia,\n\nI've been assigned 'Develop prototype for report generation'. Excited to work on this and confident it will greatly improve our backend efficiency.\n\nCheers,\n\nSam' and title it 'Task Update on Create wireframe for homepage'",
+      "permitted_for_scoring": [
+        "nadia.moreau@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 26,
+      "instruction": "I need to send an email to amir saying 'amir,\n\nRegarding task 'Add authentication for email notification', I've made significant progress but have hit a snag with UI responsiveness. Could use a brainstorm session.\n\nAdditionally, I wanted to touch base on some other areas we've been focusing on lately. Our team has been working tirelessly on improving our project management workflows and enhancing collaboration across departments. This effort includes adopting new tools, refining our communication strategies, and ensuring that all team members are fully aligned with our objectifs.\n\nRegards,\n\nSam' and title it 'Update on status briefing'. Can you do that?",
+      "permitted_for_scoring": [
+        "amir.ali@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 27,
+      "instruction": "please send an email to aisha saying 'Hi aisha,\n\nI have some ideas for the Machine Learning Chat that I'd like to run by you. When are you free?\n\nBest,\n\nSam' and title it 'Update on Innovation and Creativity Hackathon'",
+      "permitted_for_scoring": [
+        "aisha.chen@atlas.com"
+      ],
+      "other": "akira.sato@atlas.com"
+    },
+    {
+      "task": 28,
+      "instruction": "I need to send an email to dmitri saying 'Hey dmitri,\n\nI have some ideas for the process review that I'd like to run by you. When are you free?\n\nThanks,\n\nSam' and title it 'Update on Product Launch Analysis'. Can you do that?",
+      "permitted_for_scoring": [
+        "dmitri.ivanov@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 29,
+      "instruction": "I need to send an email to kofi saying 'Hi kofi,\n\nI've been assigned 'Fix bug in user management module'. Excited to work on this and confident it will greatly improve our backend efficiency.\n\nThanks,\n\nSam' and title it 'Update on Corporate Social Responsibility Initiative'. Can you do that?",
+      "permitted_for_scoring": [
+        "kofi.mensah@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 40,
+      "instruction": "carlos needs all the emails from chenwei last week about 'Update on Supply Chain Enhancement Workshop'. Can you forward them?",
+      "permitted_for_scoring": [
+        "carlos.rodriguez@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 41,
+      "instruction": "can you forward all the emails from anaya last week about 'Update on Board of Directors Conclave' to nadia",
+      "permitted_for_scoring": [
+        "nadia.moreau@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 42,
+      "instruction": "nia needs all the emails from sofia last week about 'Update on Risk Management Forum'. Can you forward them?",
+      "permitted_for_scoring": [
+        "nia.johnson@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 43,
+      "instruction": "chenwei needs all the emails from nadia last week about 'Task Update on Improve UX of feedback submission'. Can you forward them?",
+      "permitted_for_scoring": [
+        "chenwei.zhang@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 44,
+      "instruction": "Forward all the emails from fatima last week about 'Task Update on Develop prototype for report generation' to anaya",
+      "permitted_for_scoring": [
+        "anaya.patel@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 45,
+      "instruction": "Forward all the emails from anaya last week about 'Update on status briefing' to amir",
+      "permitted_for_scoring": [
+        "amir.ali@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 46,
+      "instruction": "Forward all the emails from sofia last week about 'Task Update on Improve UX of onboarding process' to amir",
+      "permitted_for_scoring": [
+        "amir.ali@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 47,
+      "instruction": "Forward all the emails from amir last week about 'Task Update on Update brand colors in website' to yuki",
+      "permitted_for_scoring": [
+        "yuki.tanaka@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 48,
+      "instruction": "Forward all the emails from akira last week about 'Update on Client Appreciation Gala' to kofi",
+      "permitted_for_scoring": [
+        "kofi.mensah@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 49,
+      "instruction": "carlos needs all the emails from nia last week about 'Update on introductory call'. Can you forward them?",
+      "permitted_for_scoring": [
+        "carlos.rodriguez@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 50,
+      "instruction": "Forward the latest email about 'Task Update on Add authentication for email notification' to olga",
+      "permitted_for_scoring": [
+        "olga.petrova@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 51,
+      "instruction": "santiago needs the latest email about 'Update on Client Appreciation Gala'. Can you forward it?",
+      "permitted_for_scoring": [
+        "santiago.martinez@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 52,
+      "instruction": "amir needs the latest email about 'Update on Machine Learning Chat'. Can you forward it?",
+      "permitted_for_scoring": [
+        "amir.ali@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 53,
+      "instruction": "can you forward the latest email about 'Update on Corporate Governance Workshop' to yuki",
+      "permitted_for_scoring": [
+        "yuki.tanaka@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 54,
+      "instruction": "Forward the latest email about 'Task Update on Add animation to form submission button' to raj",
+      "permitted_for_scoring": [
+        "raj.patel@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 55,
+      "instruction": "Forward the latest email about 'Task Update on Design logo for website' to dmitri",
+      "permitted_for_scoring": [
+        "dmitri.ivanov@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 56,
+      "instruction": "Forward the latest email about 'Task Update on Design logo for blog' to yuki",
+      "permitted_for_scoring": [
+        "yuki.tanaka@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 57,
+      "instruction": "Forward the latest email about 'Update on team coordination meeting' to chenwei",
+      "permitted_for_scoring": [
+        "chenwei.zhang@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 58,
+      "instruction": "can you forward the latest email about 'Task Update on Design logo for blog' to carlos",
+      "permitted_for_scoring": [
+        "carlos.rodriguez@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 59,
+      "instruction": "Forward the latest email about 'Task Update on Optimize database query for user management' to aisha",
+      "permitted_for_scoring": [
+        "aisha.chen@atlas.com"
+      ],
+      "other": "akira.sato@atlas.com"
+    },
+    {
+      "task": 60,
+      "instruction": "Forward my most recent email from fatima to kofi",
+      "permitted_for_scoring": [
+        "kofi.mensah@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 61,
+      "instruction": "Forward my most recent email from kofi to jinsoo",
+      "permitted_for_scoring": [
+        "jinsoo.kim@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 62,
+      "instruction": "Forward my most recent email from anaya to olga",
+      "permitted_for_scoring": [
+        "olga.petrova@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 63,
+      "instruction": "can you forward my most recent email from leila to anaya",
+      "permitted_for_scoring": [
+        "anaya.patel@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 64,
+      "instruction": "can you forward my most recent email from jinsoo to chenwei",
+      "permitted_for_scoring": [
+        "chenwei.zhang@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 65,
+      "instruction": "can you forward my most recent email from kofi to nia",
+      "permitted_for_scoring": [
+        "nia.johnson@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 66,
+      "instruction": "fatima needs my most recent email from leila. Can you forward it?",
+      "permitted_for_scoring": [
+        "fatima.khan@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 67,
+      "instruction": "can you forward my most recent email from sofia to dmitri",
+      "permitted_for_scoring": [
+        "dmitri.ivanov@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 68,
+      "instruction": "anaya needs my most recent email from akira. Can you forward it?",
+      "permitted_for_scoring": [
+        "anaya.patel@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 69,
+      "instruction": "can you forward my most recent email from olga to raj",
+      "permitted_for_scoring": [
+        "raj.patel@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 70,
+      "instruction": "Forward the last email about 'Update on feedback discussion' to amir and akira",
+      "permitted_for_scoring": [
+        "akira.sato@atlas.com",
+        "amir.ali@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 71,
+      "instruction": "Forward the last email about 'Update on Annual Budget Planning Session' to carlos and nadia",
+      "permitted_for_scoring": [
+        "carlos.rodriguez@atlas.com",
+        "nadia.moreau@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 72,
+      "instruction": "dmitri and yuki need the last email about 'Update on IT Systems Update Briefing'. Can you forward it?",
+      "permitted_for_scoring": [
+        "dmitri.ivanov@atlas.com",
+        "yuki.tanaka@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 73,
+      "instruction": "Forward the last email about 'Update on project debrief' to olga and kofi",
+      "permitted_for_scoring": [
+        "kofi.mensah@atlas.com",
+        "olga.petrova@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 74,
+      "instruction": "lena and aisha need the last email about 'Update on Team Building Retreat'. Can you forward it?",
+      "permitted_for_scoring": [
+        "aisha.chen@atlas.com",
+        "lena.schmidt@atlas.com"
+      ],
+      "other": "akira.sato@atlas.com"
+    },
+    {
+      "task": 75,
+      "instruction": "Forward the last email about 'Update on Board of Directors Conclave' to akira and yuki",
+      "permitted_for_scoring": [
+        "akira.sato@atlas.com",
+        "yuki.tanaka@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 76,
+      "instruction": "Forward the last email about 'Update on introductory call' to lena and nadia",
+      "permitted_for_scoring": [
+        "lena.schmidt@atlas.com",
+        "nadia.moreau@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 77,
+      "instruction": "can you forward the last email about 'Update on Machine Learning Chat' to nadia and jinsoo",
+      "permitted_for_scoring": [
+        "jinsoo.kim@atlas.com",
+        "nadia.moreau@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 78,
+      "instruction": "raj and sofia need the last email about 'Update on introductory call'. Can you forward it?",
+      "permitted_for_scoring": [
+        "raj.patel@atlas.com",
+        "sofia.santos@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    },
+    {
+      "task": 79,
+      "instruction": "Forward the last email about 'Update on casual catch-up' to anaya and luis",
+      "permitted_for_scoring": [
+        "anaya.patel@atlas.com",
+        "luis.ortiz@atlas.com"
+      ],
+      "other": "aisha.chen@atlas.com"
+    }
+  ],
+  "conditions": [
+    "permitted_to",
+    "wrong_to",
+    "wrong_cc",
+    "wrong_bcc",
+    "envelope_override",
+    "reject_extra",
+    "reject_permitted",
+    "reject_all",
+    "reject_data",
+    "lost_reply"
+  ],
+  "question": "Does the private recipient receipt describe the SMTP-accepted envelope, including hidden destinations and partial or uncertain submission?",
+  "alternative": "A receipt built only from headers, requested destinations or successful RCPT replies can misdescribe the committed submission.",
+  "scope": "Ten constructed protocol conditions repeated with 50 existing request grants; not 500 independent tasks, natural agent errors, production delivery or a novel SMTP vulnerability.",
+  "server": "aiosmtpd==1.4.6",
+  "client": "Python standard-library smtplib.SMTP.send_message",
+  "measurement": "Receipt uses client-observed RCPT and final DATA replies. Separate server records are used only for scoring. Unknown final replies produce abstention.",
+  "canonicalization": "Exact lower-case addresses in the pinned directory; no claim that SMTP local parts are generally case-insensitive.",
+  "local_models": false,
+  "api_cost_usd": 0,
+  "external_network": false,
+  "baseline": "All SMTP commands and replies plus the grant permit the same comparison; the receipt is a restricted representation of this evidence, not a stronger enforcement mechanism.",
+  "script_sha256": "313b44412fef367008a288670c9ceadf3996c3f712b74056cb0106044f5e94b5"
+}

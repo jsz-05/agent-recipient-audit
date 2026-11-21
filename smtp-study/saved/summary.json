@@ -1,0 +1,121 @@
+{
+  "transactions": 500,
+  "tasks": 50,
+  "conditions": {
+    "permitted_to": {
+      "transactions": 50,
+      "server_truth": {
+        "permitted": 50
+      },
+      "receipt_decisions": {
+        "permitted": 50
+      },
+      "headers_omit_wrong": 0,
+      "requested_includes_rejected_wrong": 0
+    },
+    "wrong_to": {
+      "transactions": 50,
+      "server_truth": {
+        "different": 50
+      },
+      "receipt_decisions": {
+        "different": 50
+      },
+      "headers_omit_wrong": 0,
+      "requested_includes_rejected_wrong": 0
+    },
+    "wrong_cc": {
+      "transactions": 50,
+      "server_truth": {
+        "different": 50
+      },
+      "receipt_decisions": {
+        "different": 50
+      },
+      "headers_omit_wrong": 0,
+      "requested_includes_rejected_wrong": 0
+    },
+    "wrong_bcc": {
+      "transactions": 50,
+      "server_truth": {
+        "different": 50
+      },
+      "receipt_decisions": {
+        "different": 50
+      },
+      "headers_omit_wrong": 50,
+      "requested_includes_rejected_wrong": 0
+    },
+    "envelope_override": {
+      "transactions": 50,
+      "server_truth": {
+        "different": 50
+      },
+      "receipt_decisions": {
+        "different": 50
+      },
+      "headers_omit_wrong": 50,
+      "requested_includes_rejected_wrong": 0
+    },
+    "reject_extra": {
+      "transactions": 50,
+      "server_truth": {
+        "permitted": 50
+      },
+      "receipt_decisions": {
+        "permitted": 50
+      },
+      "headers_omit_wrong": 0,
+      "requested_includes_rejected_wrong": 50
+    },
+    "reject_permitted": {
+      "transactions": 50,
+      "server_truth": {
+        "different": 50
+      },
+      "receipt_decisions": {
+        "different": 50
+      },
+      "headers_omit_wrong": 50,
+      "requested_includes_rejected_wrong": 0
+    },
+    "reject_all": {
+      "transactions": 50,
+      "server_truth": {
+        "no_send": 50
+      },
+      "receipt_decisions": {
+        "no_send": 50
+      },
+      "headers_omit_wrong": 0,
+      "requested_includes_rejected_wrong": 50
+    },
+    "reject_data": {
+      "transactions": 50,
+      "server_truth": {
+        "no_send": 50
+      },
+      "receipt_decisions": {
+        "no_send": 50
+      },
+      "headers_omit_wrong": 0,
+      "requested_includes_rejected_wrong": 0
+    },
+    "lost_reply": {
+      "transactions": 50,
+      "server_truth": {
+        "different": 50
+      },
+      "receipt_decisions": {
+        "insufficient": 50
+      },
+      "headers_omit_wrong": 50,
+      "requested_includes_rejected_wrong": 0
+    }
+  },
+  "definitive": 450,
+  "incorrect_definitive": 0,
+  "api_cost_usd": 0,
+  "python": "3.12.12",
+  "aiosmtpd": "1.4.6"
+}
