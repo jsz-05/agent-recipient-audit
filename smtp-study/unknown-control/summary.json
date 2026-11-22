@@ -1,0 +1,22 @@
+{
+  "transactions": 50,
+  "tasks": 50,
+  "conditions": {
+    "lost_before_store": {
+      "transactions": 50,
+      "server_truth": {
+        "no_send": 50
+      },
+      "receipt_decisions": {
+        "insufficient": 50
+      },
+      "headers_omit_wrong": 0,
+      "requested_includes_rejected_wrong": 0
+    }
+  },
+  "definitive": 0,
+  "incorrect_definitive": 0,
+  "api_cost_usd": 0,
+  "python": "3.12.12",
+  "aiosmtpd": "1.4.6"
+}

@@ -1,0 +1,6 @@
+{
+  "paired_tasks": 50,
+  "identical_client_observations": 50,
+  "opposite_server_commit_states": 50,
+  "both_receipts_unknown": 50
+}

@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-11-22T08:30:36.333809+00:00",
+  "timing": "Added after the original 500 transactions; before running this control.",
+  "question": "Can the client distinguish loss of the final reply before versus after server storage?",
+  "conditions": [
+    "lost_before_store"
+  ],
+  "cases": 50,
+  "comparison": "Pair by task with the saved lost_reply condition; compare RCPT replies, DATA status and public receipt. Server records must differ.",
+  "api_cost_usd": 0
+}
