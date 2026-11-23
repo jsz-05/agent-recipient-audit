@@ -1,0 +1,26 @@
+Readability refactor checked on 22 November 2026 (Python 3.12).
+
+The refactor expands compressed statements, uses clearer local names, adds
+short explanations at the main experiment boundaries, and separates repeated
+contact loading and SMTP fixture construction into helpers. Benchmark code,
+inputs, saved responses, scoring rules and serialized result fields are unchanged.
+
+An isolated copy of the original code and this release both completed:
+- Full WorkBench replay: 10 analysis files, 4 comparison files and 6 receipt
+  files matched each other and the original saved files byte for byte.
+- AppWorld reconstruction from original inputs: all 6 outputs matched byte
+  for byte, including all 352 send records and the 420 execution records.
+- Local SMTP rerun: all 550 transactions and summaries matched byte for byte.
+- History robustness: all 6 output files matched byte for byte.
+- Saved live-pilot replay: identical verification output for 32 workflows.
+- Plot generation: identical plotting data, vector drawing streams and rendered
+  pixels for all 4 figures. PDF creation timestamps are not scientific outputs.
+
+The readable AppWorld resolver has the same syntax tree as the original
+version retained in appworld/provenance/. The study checks this before running.
+The first-party code also passed an undefined-name and syntax check.
+No model was run and no API credits were used for these checks.
+
+To check the published results, run check_results.py. To regenerate and compare
+all WorkBench per-action outputs, run reproduce.py. The AppWorld and SMTP
+READMEs explain how to repeat their checks from original records or local sends.
